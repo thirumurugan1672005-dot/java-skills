@@ -1,1 +1,3 @@
-this is sample file
+1. Variables
+2. Data Types
+3. Operators
