@@ -11,7 +11,7 @@ import java.util.Scanner;
 class Solution1{
     public void solve(Scanner sc){
         int n = sc.nextInt();
-        if(n%12 == 0){
+        if(n%2 == 0){
             System.out.println("Even number");
         }
         else{
@@ -79,7 +79,7 @@ A password is valid if:
 class Solution5{
     public void solve(Scanner sc){
         String password = sc.nextLine();
-        if(password.length() > 8){
+        if(password.length() >= 8){
             System.out.println("Password accepted");
         }
         else{
