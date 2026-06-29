@@ -73,7 +73,7 @@ class Solution3{
             System.out.println("Invalid age");
         }
         else if(age >= 13 && age <= 19){
-            System.out.println("Child");
+            System.out.println("Teenager");
         }
         else if(age >= 20 && age <= 60){
             System.out.println("Adult");
