@@ -1,3 +1,4 @@
+# Java Fundamentals I - Day 8
 ## Naming Rules for Variables
 
 Java has specific rules and conventions for naming variables, classes, and methods.
