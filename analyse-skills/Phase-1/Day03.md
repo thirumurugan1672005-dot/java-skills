@@ -1,4 +1,4 @@
-# Java Fundamentals - Day 3
+# Java Fundamentals I - Day 3
 ## Type Conversion
 
 Type conversion in Java involves converting one data type to another. There are two main categories:
