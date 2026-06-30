@@ -70,21 +70,6 @@ a /= 4;  // Equivalent to: a = a / 4;  → a = 6
 a %= 3;  // Equivalent to: a = a % 3;  → a = 0
 ```
 
-### Why Use Compound Assignment Operators?
-
-1. **More Concise**: Shorter, cleaner code
-2. **More Readable**: Clearly shows the intention
-3. **Same Functionality**: Works exactly the same as the expanded form
-
-```java
-// Traditional way
-b = b + a;
-
-// Compound assignment way (preferred)
-b += a;
-```
-
----
 
 ## Increment and Decrement Operators
 
