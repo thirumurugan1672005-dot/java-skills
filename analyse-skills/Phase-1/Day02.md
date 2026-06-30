@@ -1,4 +1,4 @@
-# Java Fundamentals - Day 2
+# Java Fundamentals I - Day 2
 [Data Types](#data-types)
 ## Data Types
 
