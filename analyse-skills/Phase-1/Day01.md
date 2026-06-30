@@ -1,4 +1,4 @@
-# Java Fundamentals Part 1 - Day 1
+# Java Fundamentals I - Day 1
 
 ## Table of Contents
 1. [Introduction](#introduction)
