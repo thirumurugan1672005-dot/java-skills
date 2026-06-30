@@ -1,5 +1,5 @@
 
-#Java Fundamentals 1 - Day 12
+# Java Fundamentals 1 - Day 12
 ## Introduction to Operators
 
 **What are Operators?**
