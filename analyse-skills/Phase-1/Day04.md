@@ -1,4 +1,4 @@
-
+# Java Fundamentals - Day 4
 ### Important: Java's Type Strictness
 
 **Java does NOT allow implicit type conversion from larger to smaller types.**
