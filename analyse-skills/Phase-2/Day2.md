@@ -1,4 +1,4 @@
-
+# Java Fundamentals II - Day 2
 #### Accessing Elements
 Arrays use **0-based indexing**:
 ```java
