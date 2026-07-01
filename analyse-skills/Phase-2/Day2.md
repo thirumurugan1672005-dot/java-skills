@@ -31,3 +31,8 @@ for(int element : arr) {
     System.out.println(element);  // Direct access to element
 }
 ```
+
+
+**When to use:**
+- Traditional for: When you need index
+- Enhanced for: When you only need element value
