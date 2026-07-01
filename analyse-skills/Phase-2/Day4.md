@@ -1,4 +1,4 @@
-# Java Fundamentals - Day 4
+# Java Fundamentals II - Day 4
 #### Iterating Through 2D Arrays
 ```java
 int[][] matrix = {{1,2,3}, {4,5,6}, {7,8,9}};
