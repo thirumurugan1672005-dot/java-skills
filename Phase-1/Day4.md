@@ -94,4 +94,19 @@ class Solution{
 
 ```
 
+## Type Promotion
+Type Promotion says it promoted to type of data
+
+```java
+class A{
+   public static void main(String[] a){
+      byte b1 = 23;
+      byte b2 = 126;
+      int x = b1*b2;
+      System.out.print(x);
+   }
+}
+```
+
+
 
