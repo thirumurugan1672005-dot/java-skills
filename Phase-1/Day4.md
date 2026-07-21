@@ -1,8 +1,9 @@
 # Data Type Conversion
 
 ## Implicit Casting 
-* Implicit Casting is the automatically converted into data types by java compiler
+* Implicit Casting is the form of Type Conversion in which compiler automatically converts
 * It is concept of Widening the datatype
+* Widening means putting smaller into bigger
 
 ---------------------------------
 
@@ -14,7 +15,9 @@
 ----------------------------------
 
 ## Explicit Casting 
-It represents Casting which requires the casting into different data types
+* It represents Casting which requires the casting into different data types explicitly
+* It is Narrowing where the bigger data type is put into smaller one may lead to loss of information
+
 
 -----------------------------------
 
@@ -95,7 +98,7 @@ class Solution{
 ```
 
 ## Type Promotion
-Type Promotion says it promoted to type of data
+Type Promotion says it promoted to type of data automatically by java compiler when doing operations
 
 ```java
 class A{
