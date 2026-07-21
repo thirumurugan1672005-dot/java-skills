@@ -34,4 +34,21 @@ Reference Data Types are data types which stores references and references value
 Arrays is Data Structure which stores the group of data types
 
 ## Strings
-Strings is the data type which stores characters
+Strings is the sequence of chracters
+
+```java
+class VariablesSample {
+     public static void main(String[] args){
+         int x = 12;
+         double y = 12.3;
+         float f = 12.3f;
+         String s  = "Hello World";
+         char c = 'A';
+         long l = 12000L;
+         boolean b = false;
+         short t = 23;
+       
+     }
+}
+
+```
