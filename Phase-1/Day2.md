@@ -16,3 +16,16 @@ public class HelloWorld{
 
 * Java is case sernsitive so main, Main are different Main instead of main program won't run.
   
+## Conventions
+1.class names always start with upper case
+2. variables we use camel case (which is start with lowerCase every LetterofIntermediateBeginnning Words are upperCase)
+ exmaple : noOfWords
+
+## Run a Program
+```cmd
+javac HelloWorld.java
+```
+It compiles and produce HelloWorld.class if and only if it has main method
+```cmd
+java HelloWorld
+```
