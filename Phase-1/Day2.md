@@ -13,3 +13,6 @@ public class HelloWorld{
 * public : access everywhere
 * main : method which executes start of application
 * public static void main(String[] args) is method signature where jvm finds the class which contains this and loads it first
+
+* Java is case sernsitive so main, Main are different Main instead of main program won't run.
+  
