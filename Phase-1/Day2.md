@@ -29,3 +29,13 @@ It compiles and produce HelloWorld.class if and only if it has main method
 ```cmd
 java HelloWorld
 ```
+## Comments
+Comments are used to describe the program
+1. Single Line Comments : // at end of line
+2. Multi line comments :  /* */
+3. Documentation : /** */
+
+Caution :
+```
+/* */ are not nested so if code contains */ it may not deactivate
+```
