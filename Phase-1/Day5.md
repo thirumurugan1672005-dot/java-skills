@@ -30,7 +30,9 @@ class Solution{
 ### Rules
 1. If Either of them double result is double
 2. If Either of them float result is float
-3. Then otherwise it is required data type
+3. If Either of them Long and it is long
+4. Otherwise it is always int
+
 -----------------------------------------------------------------
 ## Logical Operators
 
