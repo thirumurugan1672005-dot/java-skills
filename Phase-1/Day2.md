@@ -30,7 +30,9 @@ It compiles and produce HelloWorld.class if and only if it has main method
 java HelloWorld
 ```
 ## Comments
-Comments are used to describe the program
+* Comments are used to describe the program
+* Comments are ignored by compiler
+* Comments are used to what's happening and what you are doing in this program
 1. Single Line Comments : // at end of line
 2. Multi line comments :  /* */
 3. Documentation : /** */
