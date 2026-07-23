@@ -30,3 +30,36 @@ int hex = 0xFF;
 int y = 0b1001;
 int z = 077;
 ```
+
+Floating Point numbers
+
+float : 6-7 precisions
+double : 15 precisions
+
+0xFF.0p2
+
+0xFf -> hex digit
+.0 -> decimal
+p2 -> exponent 2
+base is always 2
+```java
+System.out.println(0xFF.0p2);  // 15 * 2 ^ 2 = 15 * 4  = 60
+```
+*  Floating Point numbers are produced precision errors so it does not use in financial calculations
+
+To Roundoff and Overflow errors 
+1. Positive Infinity
+2. Negative Infinity
+3. Nan
+
+To check Nan we can use 
+
+```java
+Double d = Double.NaN;
+System.out.println(Double.isNan(d));
+System.out.println(Double.POSITVE_INFINITY);
+System.out.println(Double.NEGATIVE_INFINITY);
+```
+
+## Boolean 
+You cannot convert 0 and 1 or any integer into boolean values in java.
