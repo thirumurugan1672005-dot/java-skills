@@ -25,3 +25,17 @@ Jvm is Platform dependent as it depends on machine instructions in which it exec
 
 ## Java ByteCode is Platform Independent
 Java ByteCode can run on any  machine that has jvm installed on it 
+
+
+## How to Download java in windows
+
+1. download jdk from chrome
+2. Copy path up to bin from directory stored
+3. go to environment variables and add PATH variable
+4. open command prompt
+
+```cmd
+java --version
+```
+## JShell
+Jshell is the command line tool which used to execute small statements without class
