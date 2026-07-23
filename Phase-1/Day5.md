@@ -16,9 +16,9 @@ class Solution{
         // Addition of Two Numbers
         System.out.println(1+2);
         // Subraction of two numbers
-        System.out.println(2+3);
+        System.out.println(2-3);
         // Multiplication of two numbers
-        System.out.println(2*3)
+        System.out.println(2*3);
         // Division of two numbers
         System.out.println(10/2);
         // Modulus of two numbers (Remainder)
@@ -66,7 +66,7 @@ _______________________
 _________________
 |  A  |    !A   |
 -----------------
-|  T  |    T   |
+|  F  |    T  |
 ----------------
 |  T  |    F   |
 
