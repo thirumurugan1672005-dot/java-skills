@@ -7,7 +7,7 @@ public class HelloWorld{
   }
 }
 ```
-
+* Everything in java lives inside class
 * Every Java should have atleast one class
 * Every java should have only one public class whose name same name as file name
 * public : access everywhere
@@ -41,3 +41,10 @@ Caution :
 ```
 /* */ are not nested so if code contains */ it may not deactivate
 ```
+
+## printing output to console
+```java
+System.out.println("Hello World");
+```
+* System.out is the object
+* println() is the method which prints into console
