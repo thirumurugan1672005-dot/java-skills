@@ -36,3 +36,21 @@ System.out.println(y);// 12
 ```
 
 * Right hand Operand will modulo 32 unless left hand side data type is long
+
+# Operators heirarchy
+```
+1. [] . () (method call)
+2. ! ~ ++ -- +(unary) -(unary) (cast)  new
+3. * / %
+4. + -
+5. << >> >>>
+6. < <= > >= instanceof
+7. == !=
+8. &
+9. ^
+10. |
+11. &&
+12. ||
+13. ?:
+14. Compiund assignment operators
+```
