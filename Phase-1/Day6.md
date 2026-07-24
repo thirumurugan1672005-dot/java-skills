@@ -45,7 +45,7 @@ base is always 2
 ```java
 System.out.println(0xFF.0p2);  // 15 * 2 ^ 2 = 15 * 4  = 60
 ```
-*  Floating Point numbers are produced precision errors so it does not use in financial calculations
+*  Floating Point numbers are produced precision errors so it does not use in financial calculations beacuse it was represented in binary system
 
 To Roundoff and Overflow errors 
 1. Positive Infinity
