@@ -33,4 +33,24 @@ StringBuilder is the class which helps to build mutable strings
 5. delete : delete the character
 6. deleteCharAt() : delete char at index
 7. setCharAt(i) : set char at index
-      
+```java
+StringBuilder s = new StringBuilder();
+s.append("c");
+s.append("a");
+s.insert(1,"d");
+s.delete("c");
+s.append("H");
+s.deleteCharAt(0);
+s.setLength(1);
+System.out.println(s);
+```
+# Text Blocks 
+Text Blocks used to include some strings non code strings 
+
+```java
+
+String block = """
+<html>
+</html>
+"""
+```
