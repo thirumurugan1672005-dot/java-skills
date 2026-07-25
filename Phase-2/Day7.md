@@ -27,3 +27,23 @@ for(int i=0;i<10;i++){
 }
 ```
 
+## Reading and Writting 
+
+## Writting
+
+System.out.println() : writting to console
+
+## Writing in files 
+PrintWriterClass was used 
+
+## Reading 
+Scanner sc = new Scanner(System.in);
+
+input stream was used to read using scanner class
+
+nextLine() : strings to entire line
+next() : strings 
+nextInt() : Integer
+nextDouble() : double
+hasNext() : is there any
+hasNextInt() : has next integer
