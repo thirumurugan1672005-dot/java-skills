@@ -68,3 +68,49 @@ public class EmployeeTest {
 * private : access within class
 * Classes also has other class as instance fields
 * Strongly recommend to make instance fields private
+
+
+# Constructors 
+* Constructors have same name as class name
+* Constructors have no return type not even void
+* Constructors helps to intialise intial values when object is created
+* Constructors in java only called with new keyword
+*  In Some Languages () directly but not in java
+*  Class can have more than one constructors
+*  constructors have zero , one or more parameters
+
+If You don't put constructor compiler will create default constructor
+
+Example:
+```java
+class Book{
+ 
+}
+class Main{
+    public static void main(String[] args){
+       Book obj = new Book();
+    }
+}
+```
+
+If You Explicitly create any constructor then compiler won't create default one
+
+Example
+```java
+class Book{
+  Book(String author){
+     System.out.println("Author");
+   }
+}
+class Main{
+    public static void main(String[] args){
+       Book obj = new Book(); 
+    }
+}
+```
+The above code won't compile since it did not found zero parameter constructor
+
+
+* Not intoduce with local variables same name as instance fields this will create anamoiles
+
+* Because in constructor when you do intialise it it will set to local variables itself does not change instance fields
