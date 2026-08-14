@@ -1,89 +1,69 @@
-# is-a relationship
-is-a relationship states that subclass object is also super class object
+# Polymorphism
 
-# Runtime Polymorphism
+* Polymorphism is the one principle of object-oriented-programming.
 
-Runtime Polymorphism or method overriding in which polymorphism occurs at runtime
+## is-a relationship
+
+is-a relationship states that every subclass object is a superclass object.
+
 ```java
 class Employee{
-	public Employee(int id){
-		this.id = id;
-	}
-    protected int id;
-    public int getId() {
-    	return this.id;
-    }
-    public void show() {
-    	System.out.println("Employee");
-    }
 }
 class Manager extends Employee{
-	public Manager(int id) {
-		super(id);
-	}
-	public void show() {
-		System.out.println("Manager");
-	}
-}
-public class Main {
-      public static void main(String[] args) {
-    	  
-    	  Employee employee = new Employee(23);
-    	  employee.show();
-    	  
-    	  Manager manager = new Manager(32);
-    	  manager.show();
-    	  
-    	  Employee emp = new Manager(23);
-    	  emp.show();
-    	  
-    	  // Manager manag = new Employee(23); This won't work
-      }
 }
 ```
 
-# Dynamic binding
+* In above program, Manager extends Employee means that Manager is a Employee
+* so, subclass object is a superclass object.
+* In above program, Employee does not extends Manager that Employee is not a Manager.
+* so, superclass object is not a subclass object.
+* Hence superclass reference can refers both superclass object and subclass object
+* But Subclass references cannot refer the superclass object.
 
-Dynamic binding is the binding in which method calls depends on type of object not the object variable.
-```java
-class Employee{
-	public Employee(int id){
-		this.id = id;
-	}
-    protected int id;
-    public int getId() {
-    	return this.id;
+  ```java
+  Employee e = new Employee(); // works
+  e = new Manager(); // works
+  Manager m = new Manager(); // works
+  m = new Employee(); // produces run-time error
+  ```
+
+  # Dynamic binding
+
+  * Suppose the program
+
+  ```java
+  class Animal{
+    public void makeSound(){
+       System.out.println("make sound");
     }
-    public void show() {
-    	System.out.println("Employee");
-    }
-}
-class Manager extends Employee{
-	public Manager(int id) {
-		super(id);
-	}
-	public void show() {
-		System.out.println("Manager");
-	}
-}
-public class Main {
-      public static void main(String[] args) {
-    	  
-    	  Employee employee = new Employee(23);
-    	  employee.show();
-    	  
-    	  Manager manager = new Manager(32);
-    	  manager.show();
-    	  
-    	  Employee emp = new Manager(23);
-    	  emp.show();
-    	  
-    	  // Manager manag = new Employee(23); This won't work
-      }
-}
-```
-But the Superclass object variable cannot access specific subclass methods or fields.
+  }
+  class Cat extends Animal{
+      public void makeSound(){
+        System.out.println("Meow");
+     }
+     public void jump(){
+        System.out.println("jump");
+     }
+  }
+  ```
 
-But Subclass object is not super class object which means Manager is a Employee while Employee is not a Manager
+  ```java
 
-Using of superclass references instead of subclasses called covariant types 
+  Animal animal = new  Animal();
+  animal.makeSound(); // prints make sound
+  animal = new Cat();
+  animal.makeSound(); // prints Meow!
+  ```
+  * First animal references to Animal object and calls the makeSound() calls the method prints "make sound"
+  * Second animal references to Cat object and calls the makeSound() calls the method prints "Meow!"
+  * Calling of methods depends on actual object here
+
+  * This is called dynamic binding  because whatever object references calls the method depends on actual object type.
+
+  ```java
+  Animal animal = new Animal();
+  animal.jump(); // won't work
+  ```
+  Because Specific Methods of subclass cannot be referred by superclass reference.
+
+  
