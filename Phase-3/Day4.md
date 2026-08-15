@@ -11,8 +11,8 @@
 There is also another way to crate objects using utility methods
 
 ```java
-LocaleDate date1 = LocaleDate.now(); //  today's date
-LocaleDate date2 = LocaleDate.of(2001,12,31); // date of paritcular day
+LocalDate date1 = LocalDate.now(); //  today's date
+LocalDate date2 = LocalDate.of(2001,12,31); // date of paritcular day
 ```
 
 ```java
