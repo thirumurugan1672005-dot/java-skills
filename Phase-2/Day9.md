@@ -30,7 +30,7 @@ Example 2
 ```java
 
 int[]arr = {1,2,3};
-int[]brr = Arrays.copy(arr,arr.length);
+int[]brr = Arrays.copyOf(arr,arr.length);
 ```
 If it is same length entire array is copied 
 
