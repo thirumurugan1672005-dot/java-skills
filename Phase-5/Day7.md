@@ -30,11 +30,17 @@ final class Sample{
 Casting is the term used to describe forcing the type to target class type
 ```java
 class Employee{
-   int id;
-   double salary;
+  private  int id;
+   private double salary;
+public double getSalary(){
+return salary;
+ }
+
 }
 class Manager extends Employee{
-  double bonus;
+  private double bonus;
+public double getBonus(){
+}
 }
 ```
 ```java
@@ -43,4 +49,58 @@ employees[0] = new Manager();
 employees[1] = new Employee():
 employees[2]=  new Employee():
 ```
+* See employees[0] is the object of Manager but it temporarly forgets its type
+
+* if compiler promises less like putting subclass reference or subclass object to superclass variable is called upcasting
+* here no need to () casting
+```java
+Employee staff = new Manager();
+```
+* if compiler promises more subclass variable giving the superclass variable we need cast such casts are called downcasting
+```java
+Manager boss = (Manager)staff;
+```
+but sometimes we need to make sure it is Manager class or else it will produce ClassCastException
+
+To avoid ClassCastException we use instanceof method 
+
+```java
+Employee staff = new Manager();
+Manager boss;
+if(staff instanceof Manager){
+   boss = (Manager)staff;
+}
+```
+Here if it is not instance it returns false
+
+from Java 16
+```java
+if(staff instanceof Manager boss){
+}
+```
+Able to intialise boss variable if it is instance of Manager 
+
+# Patterns with instance of
+## Pattern 1 with &&
+```java
+if(m instance of Manager boss && boss.getBonus()){
+}
+```
+Checking with && is good because left is true right is going to executed
+## Pattern with Conditional Operator ?
+```java
+double bonus = (m instanceof Manager boss) ?  boss.getBonus() : 0.0;
+```
+Accessing only returns true if it is false we dont use boss variable since when they are not working.
+
+# Pattern with ||
+since it is even false it executes next one . so it was avoided
+
+## Avoid using Local variable same name as instance as it local variables overshadows here
+
+# Protected Access
+
+Protected Access was given class to use subclass and classes of same package
+
+Protected Methods was more common to use give access only to subclass
 
