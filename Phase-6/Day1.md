@@ -25,9 +25,11 @@ How to use equals() method ?
 ```java
 public class Employee{
   private int id;
+private String name;
   private double salary;
-  public Employee(int id,double salary){
+  public Employee(int id,,String name,double salary){
     this.id = id;
+    this.name = name;
     this.salary = salary;
   }
   public boolean equals(Object obj){
@@ -35,7 +37,7 @@ public class Employee{
     if(obj == null) return false;
     if(getClass() != obj.getClass()) return false;
     Employee employee = (Employee)obj;
-    return this.id == employee.id && this.salary == employee.salary;
+    return Object.equals(this.name,employee.name) && this.id == employee.id && this.salary == employee.salary;
   }
 }
 ```
