@@ -9,3 +9,19 @@
 * Since they can accept objects of any class
 * So when casted use instance of tests to avoid ClassCastException
 * Compiler Errors which are coming can be supressed by @SupressWarnings()
+# Removing Elements 
+remove(index) : remove the elements in array list 
+
+* Insertion and Deletion is not efficient in array list
+
+# Iterating ArrayList
+for-each loop is used to iterate the arraylist
+
+```java
+ArrayList<Employee> employees = new ArrayList<>();
+employees.add(new Employee(1,"Sam");
+employees.add(new Employee(2,"Carl");
+for(Employee employee:employeees){
+   System.out.println(employee.getId()+";"+employee.getName());
+}
+```
