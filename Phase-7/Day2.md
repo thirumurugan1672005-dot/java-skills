@@ -30,3 +30,7 @@ x.equals(y) and x.compareTo(y) should be compatible but differs in BigDecimal cl
 * Super class have common notion make it as final and test instance of for all subclasses
 * Specific notion used getClass test in specific subclass 
 
+
+
+## Note: 
+Abstract class implements interface it need not implement methods
