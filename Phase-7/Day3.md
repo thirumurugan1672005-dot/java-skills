@@ -31,4 +31,13 @@ It wont compile so it becomes not source compatible
  Making method default solves the problem
 
 
- 
+
+# Cloneable
+Cloneable Interface used to create clones or copies of objects
+# Records and Enums
+Records and Enums can implement interface
+# Sealed Interface
+Interface can be sealed so as its class which implements or interface it inherits sealed,non-sealed or final
+
+ # Inheritance within interface
+ Interfaces can extend only single interface
