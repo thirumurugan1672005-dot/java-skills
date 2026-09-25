@@ -1,4 +1,9 @@
 # Comparable Interface
+* Comparable interface is the interface that has compareTo() method
+* compareTo() method accepts argument compares with instance of this class
+* positive : if the value is greater in current class
+* negative : if value is lesser in current class
+* zero : if values are same
 * Before Java 5 it was raw type just like ArrayList
 * In Java 5 major update it becomes generics
 * it has one method compareTo(Object obj) which overrides the class which implements interface
@@ -21,9 +26,9 @@ x.equals(y) and x.compareTo(y) should be compatible but differs in BigDecimal cl
 
 
 # Why this interface used we could have use just compareTo() method?
-## In some cases in sort method arrays passed into as object arrays type casted to 
-## becomes Comparable array and then saw compareTo() if the object passed does not implements comparable 
-## it will throw ClassCastException
+<p> In some cases in sort method arrays passed into as object arrays type casted to 
+ becomes Comparable array and then saw compareTo() <br/> if the object passed does not implements comparable 
+ it will throw ClassCastException</p>
 
 
 ##  equals() and compareTo()
