@@ -39,3 +39,8 @@ x.equals(y) and x.compareTo(y) should be compatible but differs in BigDecimal cl
 
 ## Note: 
 Abstract class implements interface it need not implement methods
+
+
+## instance of 
+ * instance of test to make sure it belongs to class
+ * instance of test to make sure it belongs to class implements interface
