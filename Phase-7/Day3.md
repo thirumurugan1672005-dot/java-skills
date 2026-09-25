@@ -1,7 +1,24 @@
-# Inheritance in interfaces
+# Why Interfaces over abstract classes ?
+Because class can extend only one abstract class while it can implement as many as interfaces it can
 
-* Class can inherit multiple interfaces and it can extend only one class
-* Ok everything occurs
+# Static and Private Methods
+* As of Java 8 interfaces allowed static and private methods in interface
+* private methods can be used only in interface and act as helper which can be static or instance
+* static methods can be present only in interface
+* Before Java 8 companion classes use static methods but now it is unnecessary
+
+# Default Methods
+* Default methods can be used in interface from java 8
+* It does not have to worry about it implemented or not
+
+# Why Default Methods ?
+<p>Long ago,Collections interface was part of Java Standard library;
+<br/>If the class Bag implements the interface it should implement the methods
+<br/>But Later in java 8 they introduce stream() method in interface
+<br/>If it is not default Now Bag class wont compile adding non default method makes source incompatible
+<br/> But use already compiled jar file but when call by stream() method AbstractMethodError occurs
+<br/> So it solves both problems
+</p>
 
 # Scenario 1: Both interfaces have same abstract methods 
    1. It will not cause error since it is not implemented yet.
@@ -11,25 +28,9 @@
 # Scenario 3 : Super class and interfaces have same method 
  Superclass overshadows interface methods
 
-# Need of default methods
-* In java 8 Collections has stream interface as default
-
-## if it is not default
-
-```java
-
-class A implements Collection{
-   
-}
-```
-It wont compile so it becomes not source compatible
-
-## if it from old jar file
- class still loads and but it is not binary compatible
-
-
- Making method default solves the problem
-
+# Comparator interface
+Comparator Interface is the interface in which we use class to implement that interface to apply different classes as needed 
+instead of applying to single class
 
 
 # Cloneable
