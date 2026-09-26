@@ -89,7 +89,7 @@ public class Main {
       }
 }
 ```
-# Predicts
+# Predicate
 accepts none and returns boolean
 
 ```java
