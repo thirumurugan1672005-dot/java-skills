@@ -49,4 +49,7 @@ public class Third {
 ```
 * Inner class access the instance members using reference (classname.this) refers to the instance members of outer class
 * When constructor is called outer class the implicit parameter is automatically build in inner class
-* Inner class access static members directly using class names 
+* Inner class access static members directly using class names
+
+
+### You can say this is looking like not a field ; a non-static inner class shall be a member and defined for scope 
