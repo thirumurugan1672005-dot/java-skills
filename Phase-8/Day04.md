@@ -46,3 +46,8 @@ public class Third {
 * But such classes create from class as supertype automatically takes constructor of super class
 * If it is created from interface it does not have construction parameters
 * But they can have intialisation blocks
+
+
+Anymnous class fails getClass test in equals() method
+
+
