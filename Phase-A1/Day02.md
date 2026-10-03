@@ -76,7 +76,7 @@ public class Third {
 * Generic Class have one or more Type Paramters
 * Generic class have represented upper case letters in convention
 * Type Paramter enclosed in angle brackets
-* Type can beused in return type , parameter type , fields 
+* Type can beused in return type , parameter type , fields,local variables
 * T[n] is not allowed
 
 ```java
