@@ -28,6 +28,65 @@ If you store Pair<Park> and use getFirst() method ClassCastException occurs
 
 It can accept any Pair class 
 
+```java
+
+package sample;
+
+class Pair<T>{
+	private T first;
+	private T second;
+
+	Pair(T first , T second){
+		this.first = first;
+		this.second = second;
+	}
+
+	public T getFirst(){
+		return this.first;
+	}
+	public T getSecond(){
+		return this.second;
+	}
+
+	public void  setFirst(T first){
+		this.first = first;
+	}
+
+	public void  setSecond(T second){
+		this.second = second;
+	}
+}
+public class Third {
+	
+   public static void main(String[] args) {  
+	
+Pair<Integer>[]p = new Pair<Integer>[10];
+	
+   }
+}
+
+`
+```
+
+
+````
+
+public class Third {
+	
+   public static void main(String[] args) {  
+   
+	Pair<?>[]p= new Pair<?>[10];
+	p[0] = new Pair<Integer>(23,32);
+	p[1] = new Pair<String>("Hello","World");
+	
+	Integer x = (Integer) p[0].getFirst();
+	System.out.println(x);
+
+	//p[0].setFirst(122);
+	
+   }
+}
+````
 # Vargs 
 
 ```java
