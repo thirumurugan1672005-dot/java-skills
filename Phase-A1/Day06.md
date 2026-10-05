@@ -52,8 +52,8 @@ make(String::new);
 ```
 ```java
 public <T> T make(Class<T> supp){
-  return new Pair<>(supp.getClassName().getConstructor());
+  return new Pair<>(supp.getConstructor().getnewInst6ance());
 }
-make(String::new);
+make(String.class);
 ```
 
