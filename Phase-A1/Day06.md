@@ -28,3 +28,32 @@ If you store Pair<Park> and use getFirst() method ClassCastException occurs
 
 It can accept any Pair class 
 
+# Vargs 
+
+```java
+public <T> void (T..arr){
+}
+```
+* It will be converted to T[] though it has limitations
+* But it has chance of ClassCastException
+* It throws warnings use @SafeVargs from Java 9 o supress warnings
+* meaning for private , static , final  or constructors (@SafeVargs works here)
+
+# Generic Instances cannot be created 
+
+* new T() we cannot make like this is compiler error.
+
+# Fix 
+```java
+public <T> T make(Supplier<T> supp){
+  return new Pair<>(supp.get(),supp.get());
+}
+make(String::new);
+```
+```java
+public <T> T make(Class<T> supp){
+  return new Pair<>(supp.getClassName().getConstructor());
+}
+make(String::new);
+```
+
