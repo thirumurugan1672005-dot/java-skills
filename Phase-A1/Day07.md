@@ -61,7 +61,7 @@ It simply becomes undefined method because T type is non static reference
 ## Exception handling
 * You cannot extend Throwable in Generic Class
 * You cannot use Type variable in catch clause
-* You can throws , throw as it is checked in compile time
+* You can throws , throw as it is checked in compile time but Type T must bounds to Throwable or its subclasses
 
 ```java
 
