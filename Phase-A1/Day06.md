@@ -116,3 +116,9 @@ public <T> T make(Class<T> supp){
 make(String.class);
 ```
 
+We can also make 
+
+T[] a = (T[])Object[]; or T[] a = (T[]) java.lang.reflect.Arrays.instance();
+
+
+
