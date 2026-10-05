@@ -140,3 +140,8 @@ Exception in thread "main" java.lang.Error: Unresolved compilation problems:
         at sample.Box.setData(Third.java:12)
         at sample.Third.main(Third.java:31)
 ```
+
+## Clashes after Erasure
+* implement same interface twice
+* same method twice it calshed
+* sometimes even beridge method wont help
