@@ -8,7 +8,56 @@
 * Primitive Types have respective Wrapper classes
 
 ```java
-List<int> arr; // produces compiler error
+package sample;
+
+class Pair<T>{
+	private T first;
+	private T second;
+
+	Pair(T first , T second){
+		this.first = first;
+		this.second = second;
+	}
+
+	public T getFirst(){
+		return this.first;
+	}
+	public T getSecond(){
+		return this.second;
+	}
+
+	public void  setFirst(T first){
+		this.first = first;
+	}
+
+	public void  setSecond(T second){
+		this.second = second;
+	}
+}
+public class Third {
+	
+   public static void main(String[] args) {  
+	
+
+	Pair<int> p = new Pair<>();
+   }
+}
+
+```
+
+Error message :
+```
+Third.java:32: error: unexpected type
+        Pair<int> p = new Pair<>();
+             ^
+  required: reference
+  found:    int
+Third.java:32: error: cannot infer type arguments for Pair<>
+        Pair<int> p = new Pair<>();
+                      ^
+  reason: cannot infer type-variable(s) T
+    (actual and formal argument lists differ in length)
+  where T is a type-variable:
 ```
 
 ## Runtime limitations
@@ -42,3 +91,17 @@ e = (Pair<String)x;
 The above code gives warning and casted into only raw types 
 
 The cast succeeds but produce ClassCastException elsewhere
+
+
+
+```java
+  public static void main(String[] args) {  
+	
+
+	Pair<Integer> p = new Pair<Integer>(1,2);
+	 System.out.println(p.getClass());
+	 Object o = new Pair<Integer>(12,13);
+	 Pair<Integer> x = (Pair<Integer>)o;
+	 System.out.println(x.getFirst());
+   }
+````
