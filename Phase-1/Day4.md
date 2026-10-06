@@ -62,7 +62,7 @@ Example 3
 class Solution{
     public static void main(String[] args){
         int y = 23;
-        short x = (int)y;
+        short x = (short)y;
         System.out.println(x);
     }
 }
