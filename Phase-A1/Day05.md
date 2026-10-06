@@ -39,7 +39,7 @@ public class Third {
    public static void main(String[] args) {  
 	
 
-	Pair<int> p = new Pair<>();
+	Pair<int> p = new Pair<>(12,13);
    }
 }
 
