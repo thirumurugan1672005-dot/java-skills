@@ -84,5 +84,6 @@ Some Arrays don't have names : Anymnous Arrays
 Arrays produce Exception when access elements outside bounds index >= length
 ```java
 int arr[] = new int[10];
-System.out.println(arr[10]); // wont compile
+System.out.println(arr[10]); 
 ```
+It compiles and throws ArrayIndexOutOfBoundsException at runtime.
