@@ -44,6 +44,6 @@ In Encoding Schemes There are two problems
 * BasicMultilingual plane one code unit is enough
 * While Supplementary Plane are represented consecutive pairs of code units
 * Basic Multilingual : U+0000 - U+FFFF
-* Supplementary : U+10000 - U+1FFFF
+* Supplementary : U+10000 - U+10FFFF
 
 In Supplementary Pairs we use 2048 unused pairs of basic mulitlingual pairs to represent it it is referred as surrogate pairs
