@@ -58,7 +58,7 @@ To check Nan we can use
 ```java
 Double d = Double.NaN;
 System.out.println(Double.isNaN(d));
-System.out.println(Double.POSITVE_INFINITY);
+System.out.println(Double.POSITIVE_INFINITY);
 System.out.println(Double.NEGATIVE_INFINITY);
 ```
 
