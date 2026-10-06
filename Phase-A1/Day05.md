@@ -6,52 +6,37 @@
 * But Primitive types cannot be formed into Object or any other class
 * so Primitive types cannot be used in Generic Types
 * Primitive Types have respective Wrapper classes
-
 ```java
 package sample;
-
-class Pair<T>{
-	private T first;
-	private T second;
-
-	Pair(T first , T second){
-		this.first = first;
-		this.second = second;
-	}
-
-	public T getFirst(){
-		return this.first;
-	}
-	public T getSecond(){
-		return this.second;
-	}
-
-	public void  setFirst(T first){
-		this.first = first;
-	}
-
-	public void  setSecond(T second){
-		this.second = second;
-	}
+class Box<T>{
+    private T data;
+    
+    public T get(){
+        return this.data;
+    }
+    public void set(T data){
+        this.data = data;
+    }
 }
-public class Third {
-	
-   public static void main(String[] args) {  
-	
-
-	Pair<int> p = new Pair<>(12,13);
-   }
+public class Problem1 {
+    public static void main(String[] args){
+         Box<int>box = new Box<>();
+    }
 }
 
 ```
 
 Error message :
 ```
-Exception in thread "main" java.lang.Error: Unresolved compilation problems: 
+Exception in thread "main" java.lang.Error: Unresolved compilation problem:
         Syntax error, insert "Dimensions" to complete ReferenceType
-        Syntax error on token "p", delete this token
 
-        at sample.Third.main(Third.java:19)
+        at sample.P1.main(P!.java:16)
+
+```
+Fix:
+```java
+ Box<Integer>box = new Box<>();
 ```
 
 ## Runtime limitations
