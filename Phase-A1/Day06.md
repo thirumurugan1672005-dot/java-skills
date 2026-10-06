@@ -121,4 +121,55 @@ We can also make
 T[] a = (T[])Object[]; or T[] a = (T[]) java.lang.reflect.Arrays.instance();
 
 
+# Intialisation works 
+```java
+
+class Box<T>{
+    private T data;
+    public Box(){
+         
+    }
+    public T get(){
+        return this.data;
+    }
+    public void set(T data){
+        this.data = data;
+    }
+    public void sample(){
+        T[]arr;
+    }
+}
+public class Problem1{
+    public static void main(String... args){
+       Box<Integer>box[];
+       Box<Integer>x = new Box<>();
+       x.sample();
+      
+      
+    }
+}
+```
+
+
+```java
+ Box<Integer>box[] = new Box<T>[10];
+```
+Error
+```
+Exception in thread "main" java.lang.Error: Unresolved compilation problems: 
+        Cannot create a generic array of Box<T>
+        T cannot be resolved to a type
+
+        at Problem1.main(Problem1.java:19)
+```
+```java
+T[]arr = new T[10];
+```
+```
+Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+        Cannot create a generic array of T
+
+        at Box.sample(Problem1.java:14)
+        at Problem1.main(Problem1.java:21)
+```
 
