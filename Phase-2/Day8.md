@@ -11,7 +11,7 @@ class Solution{
    public static void main(String[] args){
        BigInteger x = BigInteger.valueOf(23);
        BigInteger y = new BigInteger("123456789012345667");
-       y.multiply(2)
+       y.multiply(BigInteger.valueOf(2));
    }
 }
 ```
@@ -78,7 +78,7 @@ System.out.print(arr[i]+" ");
 Some Arrays don't have names : Anymnous Arrays
 
 ```java
- new int[]{1,2,3,4,5};
+ int[] arr = new int[]{1,2,3,4,5};
 ```
 
 Arrays produce Exception when access elements outside bounds index >= length
