@@ -48,7 +48,7 @@ java Hello.java -g Cruel World
 
 args[0] = -g
 args[1] = "Cruel"
-args[2] = 'World"
+args[2] = "World"
 ```
 
 # Sorting Arrays
@@ -78,7 +78,7 @@ Ragged Arrays in which a multidimensional arrays inside arrays have different le
 
 ```java
 
-int[]arr = {{1,2,3},{4,5},{6}};
+int[][]arr = {{1,2,3},{4,5},{6}};
 ```
 Convert Arrays into String
 
@@ -86,5 +86,5 @@ Arrays.toString(arr);
 
 For Multidimensional
 
-Arrays.toDeepString(arr);
+Arrays.deepToString(arr);
 
