@@ -78,6 +78,4 @@ t = "World"; // new String forms
 ```
 
 In Strings we cannot change characters inside it : Immutability
-
-Once Literals dont have any objects it automatically eligible for Garbage Collection.
-so "Hello" becomes eligible for garbage collection.
+String literals stay referenced by pool and class constants
