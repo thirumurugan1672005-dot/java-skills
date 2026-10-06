@@ -47,17 +47,11 @@ public class Third {
 
 Error message :
 ```
-Third.java:32: error: unexpected type
-        Pair<int> p = new Pair<>();
-             ^
-  required: reference
-  found:    int
-Third.java:32: error: cannot infer type arguments for Pair<>
-        Pair<int> p = new Pair<>();
-                      ^
-  reason: cannot infer type-variable(s) T
-    (actual and formal argument lists differ in length)
-  where T is a type-variable:
+Exception in thread "main" java.lang.Error: Unresolved compilation problems: 
+        Syntax error, insert "Dimensions" to complete ReferenceType
+        Syntax error on token "p", delete this token
+
+        at sample.Third.main(Third.java:19)
 ```
 
 ## Runtime limitations
@@ -68,21 +62,40 @@ Third.java:32: error: cannot infer type arguments for Pair<>
 
 * when you try to check instance of test like instanceof Pair<String> it will produce compiler error
 * JVM knows only raw type not generic type
+```java
+
+    Object box1 = new Box<>();
+    System.out.println(box1 instanceof Box<Integer>);
+```
+Error : 
+```
+Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+        Type Object cannot be safely cast to Box<Integer>
+
+        at sample.Third.main(Third.java:21)
+
+```
+Fix :
 
 ```java
-e instanceof Pair;
-e instanceof Pair<?>;
+     
+		  Object box1 = new Box<>();
+		  System.out.println(box1 instanceof Box<?>);
+		  System.out.println(box1 instanceof Box);
 ```
-The above code runs check either Pair or Pair of any type 
 
-```java
-e instanceof Pair<String>
-```
-It throws compiler error
 
 ### getClass 
 * getClass test only returns the raw types
 * It only checks raw types
+
+```java
+	Box<String> box = new Box<>();
+    System.out.println(box.getClass());
+```
+``` class Box ```
+
+
 
 ### Casting 
 ```java
@@ -105,3 +118,11 @@ The cast succeeds but produce ClassCastException elsewhere
 	 System.out.println(x.getFirst());
    }
 ````
+
+
+````java
+   Box a = new Box<String>();
+		  Box<String>b = (Box<String>)a;
+
+````
+It compiles but with warning
