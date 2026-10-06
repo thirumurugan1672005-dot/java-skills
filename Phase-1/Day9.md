@@ -29,10 +29,10 @@ System.out.println(thirdBitFromRight);
 int n = 13; // 1101
 // 1101 << 1 = 11010 
 int x = n << 1;
-System.out.println(x);// prints 28
+System.out.println(x);// prints 26
 int y = n >> 2;
 // 1101 >> 2 = 0110
-System.out.println(y);// 12
+System.out.println(y);// 3
 ```
 
 * Right hand Operand will modulo 32 unless left hand side data type is long
