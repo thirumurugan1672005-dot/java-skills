@@ -45,7 +45,7 @@ int trueLemgth = "Hello".codePointCount(0,"Hello".length());
 ```
 2. i th codepoint
 ```java
-int index = "Hello".offSetByCodePoint(0,i);
+int index = "Hello".offsetByCodePoints(0,i);
 int codepoint = "Hello".codePointAt(index);
 ```
 
@@ -64,7 +64,7 @@ char c = s.charAt(i);
 Building Code points array
 
 ```java
-int[]codePoints = str.codepoints.toArray();
+int[]codePoints = str.codepoints().toArray();
 String s = new String(codePoints,0,codePoints.length);
 ```
 
