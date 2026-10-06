@@ -13,7 +13,7 @@ It stores numerical types (default : 0)
 1. byte : 8bits (-128 to 127)
 2. short : 16bits (-2<sup>15</sup> to 2<sup>15</sup> - 1)
 3. int : 32 bits (-2<sup>31</sup> to 2<sup>31</sup> - 1)
-4. long : 64 bits (-2<sup>63</sup> to 2<sup>63</sup> - 1) : suffix : L or l (mandatory)
+4. long : 64 bits (-2<sup>63</sup> to 2<sup>63</sup> - 1) : suffix : L or l (when literal syntax does not fit into int)
 
 ## Decimal Numbers
 It stores floating point numbers(default : 0.0)
