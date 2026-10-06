@@ -31,7 +31,7 @@ String day = switch(dayNo){
      }
     default: yield "Invalid date";
 
-}
+};
 ```
 case : 
 1. char , short,byte ,int
@@ -42,7 +42,7 @@ case :
 1. yield used to get a value instead of break it stops and get value
 
 Example
-This is new Java 14 version of Switch Expressions when break statements no longer required. it is not fall through
+This is new Java 14 version of Switch Statements when break statements no longer required. it is not fall through
 ```java
 
 switch(c){
