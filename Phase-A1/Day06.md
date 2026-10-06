@@ -120,8 +120,8 @@ We can also make
 
 T[] a = (T[])Object[]; or T[] a = (T[]) java.lang.reflect.Arrays.instance();
 
-
-# Intialisation works 
+# Generic Array and Generic Class Array 
+# Intialisation works for both
 ```java
 
 class Box<T>{
@@ -173,3 +173,57 @@ Exception in thread "main" java.lang.Error: Unresolved compilation problem:
         at Problem1.main(Problem1.java:21)
 ```
 
+## Now (1) Using Object Array if it is private 
+
+```java
+class Custom<T>{
+    private T[] elements;
+    private int size;
+    public Custom(){
+        this(0);
+    }
+    public Custom(int size){
+        this.size = size;
+        elements = (T[])new Object[size];
+    }
+    public void append(T ele){
+        size++;
+        T[]temp = (T[])new Object[size];
+        for(int i=0;i<size-1;i++){
+            temp[i] = elements[i];
+        }
+
+        temp[size-1] = ele;
+        elements = temp;
+    }
+    public String toString(){
+        StringBuilder ans = new StringBuilder();
+        ans.append("[");
+        for(int i=0;i<elements.length;i++){
+            ans.append(elements[i]);
+            if(i!=elements.length-1){
+                ans.append(",");
+            }
+        }
+        ans.append("]");
+        return ans.toString();
+    }
+
+}
+```
+But it is not safe to return 
+
+## Safe Version but Old fashioned 
+```java
+public static  <T> T[] createArray(Class<T>cls){
+		T[]arr = (T[])Array.newInstance(cls, 10);
+		return  arr;
+	}
+```
+## Safe Version : Modern
+```java
+public static <T> T[]  createGenericArray(IntFunction<T[]>fun){
+		T[]arr = fun.apply(2);
+		return arr;
+	}
+```
