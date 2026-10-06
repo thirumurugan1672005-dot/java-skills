@@ -12,7 +12,7 @@ Java counts codepoints and code units in string
 
 ```java
 String s = "HelloWorld";
-System.out.println(s.substring(0,3);
+System.out.println(s.substring(0,3));
 ```
 Example:
   Substring from 0 to 3-1 first to second - 1 
