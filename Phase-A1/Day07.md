@@ -143,5 +143,7 @@ Exception in thread "main" java.lang.Error: Unresolved compilation problems:
 
 ## Clashes after Erasure
 * implement same interface twice
-* same method twice it calshed
+If two generic interfaces implement in class and then clash will occur
+* same method twice it clashed
+for example Object has equals() method but we define our own method with type but after erasure both becomes object ; avoid same name
 * sometimes even beridge method wont help
