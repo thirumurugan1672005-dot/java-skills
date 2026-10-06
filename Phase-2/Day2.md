@@ -36,7 +36,7 @@ String Code Points are always start at zero.
 
 
 1. Code Point : Code points given U+0000 to U+FFFF was basic multilingual plane :-> 1 code unit
-2. Code Point : Code points given U+10000 to U+1FFFF was supplementary code plane :-> 2 code units
+2. Code Point : Code points given U+10000 to U+10FFFF was supplementary code plane :-> 2 code units
 
 Code Point
 1. Length :
