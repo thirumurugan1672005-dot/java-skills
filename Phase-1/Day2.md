@@ -25,7 +25,7 @@ public class HelloWorld{
 ```cmd
 javac HelloWorld.java
 ```
-It compiles and produce HelloWorld.class if and only if it has main method
+It compiles and produce HelloWorld.class; aqnd then HelloWorld.class runs if and only if has main method
 ```cmd
 java HelloWorld
 ```
