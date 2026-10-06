@@ -52,5 +52,5 @@ Text Blocks used to include some strings non code strings
 String block = """
 <html>
 </html>
-"""
+""";
 ```
