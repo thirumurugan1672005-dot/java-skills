@@ -43,7 +43,8 @@ double : 15 precisions
 p2 -> exponent 2
 base is always 2
 ```java
-System.out.println(0xFF.0p2);  // 15 * 2 ^ 2 = 15 * 4  = 60
+System.out.println(0xFF.0p2);  // 255 * 4 = 1020
+
 ```
 *  Floating Point numbers are produced precision errors so it does not use in financial calculations beacuse it was represented in binary system
 
