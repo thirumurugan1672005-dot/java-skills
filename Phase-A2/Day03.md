@@ -31,7 +31,7 @@ public class Main {
 
 ```
 
-
+## Collection interface extends Iterable interface
 * add(E) : add elements in the Collection
 * remove(E): removes the elements in the Collection
 * some collection classes did not implement throw UnSupportedOperationException
