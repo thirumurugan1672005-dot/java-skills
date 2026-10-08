@@ -111,7 +111,7 @@ here i will intialsed with 10 before invoking of constructor
 ```java
 class A{
 private int i = nextId();
-public void nextId(){
+public int nextId(){
 return 2*i*i + 1*i + 6;
 }
 }
