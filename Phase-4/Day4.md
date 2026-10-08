@@ -26,7 +26,7 @@ this referes to implicit parameter actually reference to current object
 class Main{
    String sample;
    Main(String sample){
-      sample = sample;
+      this.sample = sample;
    }
 }
 ```
