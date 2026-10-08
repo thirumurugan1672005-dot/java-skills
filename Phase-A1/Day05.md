@@ -84,7 +84,7 @@ Fix :
 
 ### Casting 
 ```java
-e = (Pair<String)x;
+e = (Pair<String>)x;
 ```
 The above code gives warning and casted into only raw types 
 
