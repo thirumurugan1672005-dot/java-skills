@@ -111,8 +111,8 @@ public <T> Pair<T> make(Supplier<T> supp){
 make(String::new);
 ```
 ```java
-public <T> Pair<T> make(Class<T> supp){
-  return new Pair<>(supp.getConstructor().newInstance());
+public <T> Pair<T> make(Class<T> supp) throws Exception{
+  return new Pair<>(supp.getConstructor().newInstance().supp.getConstructor().newInstance());
 }
 make(String.class);
 ```

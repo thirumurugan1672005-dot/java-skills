@@ -52,6 +52,8 @@ public class Main {
 }
 ```
 # Constructors in Inheritance
+
+## Demonstration of super keyword
 ```java
 class Staff{
 	int id;
@@ -68,9 +70,7 @@ class Staff{
 }
 class AdminStaff extends Staff{
 	
-	public AdminStaff(int id , String name ,double salary){
-		super(id,name,salary);
-	}
+
 	
 	void raiseSalary() {
 		super.raiseSalary();// common raise
@@ -91,7 +91,7 @@ public class Main {
 }
 ```
 * We get compile time Error for above Code that we don't have default constructor on superclass
-* super() is used to invoke super class constructor
+* super() is used to invoke super class constructor there are no default construcor in super class 
   
 * When constructor is written without super() or this() super() is always present at first
 line of constructor

@@ -37,8 +37,9 @@ StringBuilder is the class which helps to build mutable strings
 StringBuilder s = new StringBuilder();
 s.append("c");
 s.append("a");
+s.append("b is the good");
 s.insert(1,"d");
-s.delete(2,2);
+s.delete(2,3);
 s.append("H");
 s.deleteCharAt(0);
 s.setLength(1);

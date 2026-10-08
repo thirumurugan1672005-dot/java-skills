@@ -70,7 +70,7 @@ class Management{
         }
         noItems--;
      }
-   }
+   
   public void shipItem(){
       status = "SHIPPED";
   }

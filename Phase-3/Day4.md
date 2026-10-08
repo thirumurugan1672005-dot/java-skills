@@ -4,7 +4,7 @@
  * There are different representation in different parts of world
  * Date represents the point of time
  * For Each Representation we need seperate class it is good idea.
- * There so many Calendars used around the world Georgian Calendar is common own.
+ * There so many Calendars used around the world Gregorian Calendar is common own.
  * Some Represent MM/DD/YYYY while some represent DD/MM/YYYY and few YYYY/MM/DD
 # LocalDate
 

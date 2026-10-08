@@ -9,6 +9,7 @@ public class Employee{
     private String name;
     private double salary;
     private LocalDate hireDay;
+    private int year;
 
 
     // methods
@@ -33,9 +34,11 @@ public class Employee{
     }
 
      // constructors
-    public Employee(String n,double s){
+    public Employee(String n,double s,int y){
          name = n;
-         salary = s;       
+         salary = s;
+         hireDay = new LocalDate().now();
+         year = y;       
     }
     public void raiseSalary(int per){
         this.salary+=(per*0.01*this.salary);

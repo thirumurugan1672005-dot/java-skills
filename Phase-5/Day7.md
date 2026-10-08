@@ -16,7 +16,7 @@ final class Sample{
 
 
 * In early days of Java programming final was used to avoid overhead of dynamic binding
-* yes dynamic binding brings overhead because it interfers the cpu in process of fetching next instruction during current process
+* yes dynamic binding brings overhead the compiler does not know what the  method will run
 * for example inling means e.getName() converts to e.name;
   
 * compiler chooses method which is final not have chance to override as capable of inlining
@@ -86,7 +86,7 @@ Able to intialise boss variable if it is instance of Manager
 # Patterns with instanceof
 ## Pattern 1 with &&
 ```java
-if(m instance of Manager boss && boss.getBonus() == 1200){
+if(m instanceof Manager boss && boss.getBonus() == 1200){
 }
 ```
 Checking with && is good because left is true right is going to executed
