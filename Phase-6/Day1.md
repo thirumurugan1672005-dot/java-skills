@@ -27,7 +27,7 @@ public class Employee{
   private int id;
 private String name;
   private double salary;
-  public Employee(int id,,String name,double salary){
+  public Employee(int id,String name,double salary){
     this.id = id;
     this.name = name;
     this.salary = salary;
@@ -37,7 +37,7 @@ private String name;
     if(obj == null) return false;
     if(getClass() != obj.getClass()) return false;
     Employee employee = (Employee)obj;
-    return Object.equals(this.name,employee.name) && this.id == employee.id && this.salary == employee.salary;
+    return Objects.equals(this.name,employee.name) && this.id == employee.id && this.salary == employee.salary;
   }
 }
 ```
@@ -50,7 +50,7 @@ private String name;
 * When non null and class matched , cast into object of the class.
 * return if the fields are equal return true else false.
 
-Object.equals(a,b) method
+Objects.equals(a,b) method
 * Both null gives true
 * Only one null it is false
 * returns a.equals(b)
