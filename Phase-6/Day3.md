@@ -1,6 +1,5 @@
 # Generic Array List
-* In C/C++ Arrays size is defined at compile time.
-* C/C++d do have heap allocation
+* In C/C++ Arrays size is allocated at heap but the size is fixed
 * In Java Arrays size can be done at runtime.
 * ArrayLists is the dynamic in which size can be changed.
 

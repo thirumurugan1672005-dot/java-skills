@@ -30,12 +30,12 @@ For example : getMonthValue() access and not mutate
 
 Mutator Methods : Mutator Methods mutate methods which change state.
 
-For example : GeorgianCalendar calendar class 
+For example : GregorianCalendar calendar class 
 
 ```java
 GregorianCalendar someDay = new GregorianCalendar(1999, 11, 
 31);
-someday.add(Calendar.DAY_OF_MONTH,1000);  // mutate methods
+someDay.add(Calendar.DAY_OF_MONTH,1000);  // mutate methods
 ```
 
 Non Mutator Methods : These Methods does not mutate it

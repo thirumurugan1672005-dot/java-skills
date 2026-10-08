@@ -90,13 +90,13 @@ public class Third {
 # Vargs 
 
 ```java
-public <T> void (T...arr){
+public <T> void m1 (T...arr){
    
 }
 ```
 * It will be converted to T[] though it has limitations
 * But it has chance of ClassCastException
-* It throws warnings use @SafeVarargs from Java 9 o supress warnings
+* It throws warnings use @SafeVarargs from Java 7 o supress warnings
 * meaning for private methods(Java 9) , static , final  or constructors (@SafeVarargs works here in java 7)
 
 # Generic Instances cannot be created 
@@ -111,15 +111,15 @@ public <T> Pair<T> make(Supplier<T> supp){
 make(String::new);
 ```
 ```java
-public <T> T make(Class<T> supp){
-  return new Pair<>(supp.getConstructor().getInstance());
+public <T> Pair<T> make(Class<T> supp){
+  return new Pair<>(supp.getConstructor().newInstance());
 }
 make(String.class);
 ```
 
 We can also make 
 
-T[] a = (T[])Object[10]; or T[] a = (T[]) java.lang.reflect.Array.newInstance();
+T[] a = (T[]) new Object[10]; or T[] a = (T[]) java.lang.reflect.Array.newInstance();
 
 # Generic Array and Generic Class Array 
 # Intialisation works for both

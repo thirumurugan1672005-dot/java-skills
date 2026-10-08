@@ -67,9 +67,7 @@ class Staff{
 	}
 }
 class AdminStaff extends Staff{
-	public AdminStaff(){
-		
-	}
+	
 	public AdminStaff(int id , String name ,double salary){
 		super(id,name,salary);
 	}
@@ -85,14 +83,14 @@ public class Main {
  
     	  staff.raiseSalary();
     	  System.out.println(staff.salary);
-    	  AdminStaff admin = new AdminStaff();
+    	  AdminStaff admin = new AdminStaff(12,"rahul",50_000);
     	  
     	  admin.raiseSalary();
     	  System.out.println(admin.salary);
       }
 }
 ```
-* We get runtime Error for above Code that we don't have default constructor on superclass
+* We get compile time Error for above Code that we don't have default constructor on superclass
 * super() is used to invoke super class constructor
   
 * When constructor is written without super() or this() super() is always present at first

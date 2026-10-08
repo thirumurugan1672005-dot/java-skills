@@ -37,6 +37,9 @@ public class Employee{
          name = n;
          salary = s;       
     }
+    public void raiseSalary(int per){
+        this.salary+=(per*0.01*this.salary);
+    }
 }
 ```
 
@@ -50,9 +53,9 @@ public class EmployeeTest {
     
     public static void main(String[] args){
         Employee[] employees = new Employee[3];
-        employees[0] = new Employee("Ravi",1_00_000,2018,6,7);
-        employees[1] = new Employee("Raj",1_50_000,2020,6,7);
-        employees[2] = new Employee("Mohan",50_000,2025,8,7);
+        employees[0] = new Employee("Ravi",1_00_000,2018);
+        employees[1] = new Employee("Raj",1_50_000,2020);
+        employees[2] = new Employee("Mohan",50_000,2025);
         for(Employee employee : employees){
              employee.raiseSalary(5);
         }

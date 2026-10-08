@@ -6,6 +6,7 @@ Integer Data Types
 1. C/C++ Integer Data Types are used for powerful precision
 2. For 32 bit processer they use 4 bytes and for 16 bit processer they use 2 byte
 3. long data type : 8byte for 64 bit proccessor , 4 byte for 32 bit processer
+4. C/C++ is  not universal and varies per platforms
 
 Java have same precision on all machines since range is fixed. They are platform independent
 

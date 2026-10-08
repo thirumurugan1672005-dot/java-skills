@@ -50,17 +50,17 @@ class Management{
      int noItems = 0;
      String status = "EMPTY";
      public void addItem(){
-        if(status.equalsIgnoreCase("SHIPPED"){
+        if(status.equalsIgnoreCase("SHIPPED")){
             System.out.println("It is Shipped");
              return;
         }
-        if(status.equalsIgnoreCase("EMPTY"){
+        if(status.equalsIgnoreCase("EMPTY")){
            status = "Adding..";
         }
         noItems++;
      }
      public void removeItem(){
-        if(status.equalsIgnoreCase("SHIPPED"){
+        if(status.equalsIgnoreCase("SHIPPED")){
             System.out.println("It is Shipped");
              return;
         }

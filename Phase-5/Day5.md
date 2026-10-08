@@ -10,7 +10,7 @@ class Manager extends Employee{
 }
 ```
 ```java
-Manager managers[] = new Managers[3];
+Manager managers[] = new Manager[3];
 
 ```
 * Managers array was declared with Manager references of size 3

@@ -51,8 +51,8 @@ class A{
    private String passWordCreation(String password){
        byte[] passBytes = password.getBytes();
        
-       for(int i=0;i<passBytes;i++){
-           passBytes[i] = passBytes[i]*26 + passBytes[i]*32;
+       for(int i=0;i<passBytes.length;i++){
+           passBytes[i] = (byte) (passBytes[i]*26 + passBytes[i]*32);
        }
       return passBytes.toString();
    }

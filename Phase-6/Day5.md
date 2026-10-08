@@ -6,13 +6,13 @@ Enumerated Class is the class which extends Enum
 * Its constructor is always private meaning we cannot instanise the enum
 * we cannot extend enum as it was implictly extended by Enum
 * we cannot subclass since it is final
-* Values() is the method to get all the instances in array
+* values() is the method to get all the instances in array
 * We can access instances using class names
 * we can have methods associated with it
 
 ```java
 enum TrafficLight{
-   RED(0),YELLOW(1),GREEEN(2);
+   RED(0),YELLOW(1),GREEN(2);
    private int colorCode;
    private TrafficLight(int colorCode){
       this.colorCode = colorCode;

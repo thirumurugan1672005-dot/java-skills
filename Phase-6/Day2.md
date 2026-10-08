@@ -24,11 +24,11 @@ class Employee{
 
 * Every object has hashcode.
 
-## Objects.hashcode() : null safe
+## Objects.hash() : null safe
 ```java
 Objects.hash(field1,field2,field3);
 ```
 Records has implementation of hashcode()
 
-arr.hashCode() is identity based ; Use Arrays.hashcode(arr)
+arr.hashCode() is identity based ; Use Arrays.hashCode(arr)
 

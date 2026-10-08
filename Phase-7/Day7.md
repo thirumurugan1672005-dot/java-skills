@@ -51,7 +51,7 @@ When you use this keyword in the lambda expression it refers to instance of clas
 ```java
 
 String word = "hello";
-word = "greeting"
+word = "greeting";
 Runnable runnable = () ->{
 System.out.print(word);
 }
