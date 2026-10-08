@@ -47,14 +47,15 @@ This is new Java 14 version of Switch Statements when break statements no longer
 
 switch(c){
   case "Yes"->{
-     yield "Yes";
-  };
+     System.out.println("Yes");
+  }
   case "No" -> {
-     yield "No";
+     System.out.println("No");
   }
    default -> {
      System.out.println("Default");
-      yield "Invalid";
+     System.out.println("Invalid");
+      
      }
 }
 ```
