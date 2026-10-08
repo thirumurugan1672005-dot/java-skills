@@ -98,7 +98,7 @@ remove() method removes element when last called by next()
 it = col.iterator();
 it.next();
 it.remove();
-it.remove(); # ERROR
+it.remove(); // ERROR
 ```
 It throws IllegalStateException when try to remove without next()
 
