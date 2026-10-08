@@ -21,7 +21,7 @@ enum TrafficLight{
       return this.colorCode;
   }
 }
-TrafficLight[] signals = TrafficLight.Values();
+TrafficLight[] signals = TrafficLight.values();
 for(TrafficLight light:signals){
     System.out.println(light.getColorCode());
  }
