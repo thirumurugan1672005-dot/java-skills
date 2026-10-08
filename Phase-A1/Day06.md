@@ -91,6 +91,7 @@ public class Third {
 
 ```java
 public <T> void (T..arr){
+   
 }
 ```
 * It will be converted to T[] though it has limitations
@@ -111,14 +112,14 @@ make(String::new);
 ```
 ```java
 public <T> T make(Class<T> supp){
-  return new Pair<>(supp.getConstructor().getnewInst6ance());
+  return new Pair<>(supp.getConstructor().getnewInstance());
 }
 make(String.class);
 ```
 
 We can also make 
 
-T[] a = (T[])Object[]; or T[] a = (T[]) java.lang.reflect.Arrays.instance();
+T[] a = (T[])Object[]; or T[] a = (T[]) java.lang.reflect.Array.newInstance();
 
 # Generic Array and Generic Class Array 
 # Intialisation works for both
