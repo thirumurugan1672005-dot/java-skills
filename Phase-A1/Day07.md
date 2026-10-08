@@ -67,7 +67,8 @@ It simply becomes undefined method because T type is non static reference
 
 class Box<T> extends   Throwable{
 	private T data;
-	public T(int data){
+	public 
+	Box(int data){
 		this.data = data;
 	}
 	public T getData(){
