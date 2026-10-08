@@ -7,7 +7,7 @@
 final class Sample{
 }
 ```
-* if you make class as final everything inside it is final
+* if you make class as final methods stayed inside final and fields stay mutable
 
 
 * sometimes we need to make only few methods instead of whole class
@@ -62,7 +62,7 @@ Manager boss = (Manager)staff;
 ```
 but sometimes we need to make sure it is Manager class or else it will produce ClassCastException
 
-To avoid ClassCastException we use instanceof method 
+To avoid ClassCastException we use instanceof operator
 
 ```java
 Employee staff = new Manager();
