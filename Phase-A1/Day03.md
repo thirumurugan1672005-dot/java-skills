@@ -27,7 +27,7 @@ public class Third {
 	 
 	 Integer[]arr1 = {-1,2,3,-12};
 	 int ele1 = third.<Integer>findSmallest(arr1);
-	 System.out.println(ele);
+	 System.out.println(ele1);
 	 
 	  
    }
