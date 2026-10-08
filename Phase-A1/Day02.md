@@ -45,7 +45,7 @@ class CustomList<T>{
 	}
 	public T get(int index) {
 		if(index >= size) {
-			System.out.println("Out of Bounds");
+            throw new IndexOutOfBoundsException("Out of Bounds");
 		}
 		else {
 			T ele = (T)arr[index];
