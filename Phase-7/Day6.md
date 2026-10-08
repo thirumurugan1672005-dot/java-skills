@@ -3,7 +3,7 @@
 Method References are the when lambda does one thing not many
 
 ```java
-(s) -> System.out::println
+System.out::println
 ```
 
 ```java
