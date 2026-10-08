@@ -12,7 +12,7 @@ Java only uses call by value
 1. primitive types
    ```java
    class Sol{
-        public void triple(int a){
+        public static  int (int a){
             return 3*a;
         }
         public static void main(String[] args){

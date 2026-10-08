@@ -18,7 +18,7 @@ class A implements Movable{
   }
 }
 ```
-If the class implements method should be public otherwise the compiler will make it more restrictive
+If the class implements method should be public otherwise the compiler will throw error and will not make it more restrictive
 
 
 Class can implement multiple interfaces
@@ -44,7 +44,7 @@ class A implements Movable,Runnable{
 ```
 
 * Interfaces cannot have constructor , instance fields , non final static fields
-* only in java 8 default methods are being allowed
+* only in java 8 default,static methods are being allowed
 * Java 9 private interface methods are allowed
 * Interfaces all the fields become public static final (constants)
 

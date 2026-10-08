@@ -46,8 +46,8 @@ This is new Java 14 version of Switch Statements when break statements no longer
 ```java
 
 switch(c){
-  case "Yes",'y'->"Yes";
-  case "No" , 'n'-> "No";
+  case "Yes"->"Yes";
+  case "No" -> "No";
    default -> {
      System.out.println("Default");
       yield "Invalid";

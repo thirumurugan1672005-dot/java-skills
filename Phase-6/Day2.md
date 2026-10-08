@@ -1,6 +1,6 @@
  * Records use equals() method to match fields
 * Arrays.equals method makes  arrays equal
-* Arrays.DeepEquals() method to equal multidimensional array
+* Arrays.deepEquals() method to equal multidimensional array
 
 # toString() method
 * toString() method to use make logs of the string
@@ -20,7 +20,7 @@ class Employee{
 * hashCode() method returns the integer derrived from object.
 * When define equals() method define hashcode() method
 * hashCode() Probability of making hashcodes are different
-* it is derrived from object memory
+* it is identity based
 
 * Every object has hashcode.
 
@@ -30,5 +30,5 @@ Objects.hash(field1,field2,field3);
 ```
 Records has implementation of hashcode()
 
-arr.hashcode() is identity based ; Use Arrays.hashcode(arr)
+arr.hashCode() is identity based ; Use Arrays.hashcode(arr)
 

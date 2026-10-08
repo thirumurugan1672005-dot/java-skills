@@ -21,8 +21,8 @@ record Point(double x,double y) {
 		this(0.0,0.0);
 	}
 	public double getDistance(double x , double y) {
-		double dx = this.x() *x;
-		double dy = this.y() * y;
+		double dx = this.x() -x;
+		double dy = this.y() - y;
 		double dis = Math.sqrt((dx*dx)+(dy*dy));
 		return dis;
 	}

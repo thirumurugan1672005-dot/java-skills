@@ -53,10 +53,10 @@ This is new Java 14 version of Switch Statements when break statements no longer
 ```java
 
 switch(c){
-  case "Yes",'y'->{
+  case "Yes","Correct"->{
       System.out.println("Yes");
   }
-  case "No" , 'n'->{
+  case "No" , "Wrong"->{
       System.out.println("No");
    }
 }

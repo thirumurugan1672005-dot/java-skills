@@ -17,10 +17,7 @@
 ```java
 Date date ;
 ```
-It Was Intialised but it does not have any object yet 
-
-If We try to invoke from this results in Runtime Error
-
+It was unintialised for local variables it is compile time error while for non-local it will get NullPointerException as it is null
 
 ```java
 date = new Date();

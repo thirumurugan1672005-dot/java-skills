@@ -102,7 +102,8 @@ Note : only inner class can be private ; other class are public or package-visib
 
 Private inner class accessible only by Outer class 
 
-The above code throws Exception 
+Access inner class directly makes compiler error
 
 
 * Access only by outer class members  for private class 
+* static allowed in inner class (java16+)

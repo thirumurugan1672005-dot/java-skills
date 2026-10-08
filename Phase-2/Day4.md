@@ -45,8 +45,8 @@ InDefinite Loops
 
 1. Number of iterations unknown
 
-2. while loop : executes until condition satisifes
-3. do while loop: executes atleast once
+2. while loop : executes only if the condition is satisfied
+3. do while loop: executes atleast once and checks condition and executes then if the condition is true
 
 Definite Loops
 1. Number of iterations known

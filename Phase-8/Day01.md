@@ -48,7 +48,7 @@ public class Third {
 }
 ```
 * Inner class access the instance members using reference (classname.this) refers to the instance members of outer class
-* When constructor is called outer class the implicit parameter is automatically build in inner class
+* the outer instance reference is attached into inner class when new Inner() or outer.new Inner() not when constructor is called.
 * Inner class access static members directly using class names
 
 

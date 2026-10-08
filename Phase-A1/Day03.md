@@ -45,7 +45,7 @@ We can also infer types but it may produce error and do accordingly
 * combine use & combine restrictions
 
 ```java
-public <T extends Comparable> T findSmallest(T[]arr) {
+public <T extends Comparable<T>> T findSmallest(T[]arr) {
 		if(arr == null || arr.length == 0) {
 			return null;
 		}

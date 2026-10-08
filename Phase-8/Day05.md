@@ -17,4 +17,4 @@ public class Third {
 }
 
 ```
-Classes defined interface , records ,enums are static and vice versa
+Classes defined inside interface , records ,enums are static 

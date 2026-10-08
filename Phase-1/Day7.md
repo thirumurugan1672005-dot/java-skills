@@ -28,7 +28,7 @@ change between encoding schemes easier
 ```
 
 # Unicode Encoding System
-* Java uses Unicode encoding Scheme 16 bit
+* Java uses UTF-16 encoding scheme
 
 In Encoding Schemes There are two problems
 1. One letter was encoded as different letters in different encoding schemes

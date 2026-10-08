@@ -58,4 +58,4 @@ remove():
 2. removing same next() call twice : IllegalStateException
 3. removes the element
 
-forEachRemaining() : takes the remaining elements in supplier interface
+forEachRemaining() : takes the remaining elements in consumer interface

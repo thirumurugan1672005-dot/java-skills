@@ -67,6 +67,9 @@ class Staff{
 	}
 }
 class AdminStaff extends Staff{
+	public AdminStaff(){
+		
+	}
 	public AdminStaff(int id , String name ,double salary){
 		super(id,name,salary);
 	}

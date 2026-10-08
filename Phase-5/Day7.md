@@ -25,6 +25,8 @@ final class Sample{
 * just in time compiler in virtual machine notes method is simple,often called , not actually override into inling
 * but if virtual machine loads the class which subclass which overrides the method optimiser undo the inling.
 
+Inlining : Inlining means replacing a call with method body in final , static or non-overridden methods
+
 
 # Casting
 Casting is the term used to describe forcing the type to target class type

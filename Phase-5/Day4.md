@@ -24,7 +24,7 @@ class Manager extends Employee{
   Employee e = new Employee(); // works
   e = new Manager(); // works
   Manager m = new Manager(); // works
-   // m = new Employee(); // produces run-time error
+   // m = new Employee(); // compiler error incomaptible types
   ```
 
   # Dynamic binding

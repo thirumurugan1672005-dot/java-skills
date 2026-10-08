@@ -38,7 +38,7 @@ StringBuilder s = new StringBuilder();
 s.append("c");
 s.append("a");
 s.insert(1,"d");
-s.delete("c");
+s.delete(2,2);
 s.append("H");
 s.deleteCharAt(0);
 s.setLength(1);

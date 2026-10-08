@@ -64,7 +64,7 @@ char c = s.charAt(i);
 Building Code points array
 
 ```java
-int[]codePoints = str.codepoints().toArray();
+int[]codePoints = str.codePoints().toArray();
 String s = new String(codePoints,0,codePoints.length);
 ```
 
