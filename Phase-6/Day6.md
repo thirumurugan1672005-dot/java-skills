@@ -10,6 +10,7 @@
 
 Integer i = new Integer(); // depereceated
 ```
+It does not exist now.
 # valueOf method
 ```java
 Integer i = Integer.valueOf(13);
