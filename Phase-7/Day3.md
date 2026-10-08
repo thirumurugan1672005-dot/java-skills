@@ -2,9 +2,9 @@
 Because class can extend only one abstract class while it can implement as many as interfaces it can
 
 # Static and Private Methods
-* As of Java 8 interfaces allowed static and private methods in interface
+* As of Java 9 interfaces allowed static and private methods in interface
 * private methods can be used only in interface and act as helper which can be static or instance
-* static methods can be present only in interface
+* static methods present in interface from java 8
 * Before Java 8 companion classes use static methods but now it is unnecessary
 
 # Default Methods
@@ -42,4 +42,4 @@ Records and Enums can implement interface
 * It is only extended by an interface or implemented by class which permits or present in same source file just like sealed classes
 
  # Inheritance within interface
- Interfaces can extend only single interface
+ Interfaces can extend only single interface in older versions but now interface extends multiple interfaces
