@@ -95,7 +95,7 @@ Iterator when calling next() jumps to the next element and return the reference 
 remove() method removes element when last called by next()
 
 ```java
-it = col.Iterator();
+it = col.iterator();
 it.next();
 it.remove();
 it.remove(); # ERROR
