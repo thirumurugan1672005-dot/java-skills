@@ -48,7 +48,7 @@ class A{
    A(String s){
       this();
    }
-   A(int i)(
+   A(int i){
       this("sample"+i);
    }
 }
