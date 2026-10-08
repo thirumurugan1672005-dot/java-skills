@@ -51,7 +51,8 @@ private String name;
 * return if the fields are equal return true else false.
 
 Object.equals(a,b) method
-* a = null or b = null it is false
+* Both null gives true
+* Only one null it is false
 * returns a.equals(b)
 
 
