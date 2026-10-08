@@ -19,9 +19,9 @@ for-each loop is used to iterate the arraylist
 
 ```java
 ArrayList<Employee> employees = new ArrayList<>();
-employees.add(new Employee(1,"Sam");
-employees.add(new Employee(2,"Carl");
-for(Employee employee:employeees){
+employees.add(new Employee(1,"Sam"));
+employees.add(new Employee(2,"Carl"));
+for(Employee employee : employees){
    System.out.println(employee.getId()+";"+employee.getName());
 }
 ```
