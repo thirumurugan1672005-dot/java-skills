@@ -46,4 +46,8 @@ In Encoding Schemes There are two problems
 * Basic Multilingual : U+0000 - U+FFFF
 * Supplementary : U+10000 - U+10FFFF
 
-In Supplementary Pairs we use 2048 unused pairs of basic mulitlingual pairs to represent it it is referred as surrogate pairs
+(1024 high + 1024 low)
+
+In Supplementary Pairs we use 2048 unused code values of basic mulitlingual pairs to represent it it is referred as surrogate pairs
+
+Since java is UTF-16 code units 

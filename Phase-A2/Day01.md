@@ -10,7 +10,7 @@ for example
 3. Queue is First in First out
 4. Implemented in two ways : Circular Array ; LinkedList
 5. ArrayDeque and LinkedList are the classes used to implement the queue
-6. ArrayDeque is preferred over when maximum capciy is known over LinkedList
+6. ArrayDeque is not bounded so capcity argument is only an intial size
 
 
 ```java

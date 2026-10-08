@@ -50,7 +50,7 @@ public class Main {
 
 # LinkedList
 * LinkedList is the implementation of list when need of more insertions and deletions
-* traversing will cost but insertitons and deletions effective than arraylist
+* traversing will cost effective but insertitons and deletions effective by using iterator ; By index it is O(n)
 * implement as double linked list go both previous and next
 
 ```

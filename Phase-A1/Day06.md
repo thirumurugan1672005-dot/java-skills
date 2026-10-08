@@ -96,8 +96,8 @@ public <T> void (T..arr){
 ```
 * It will be converted to T[] though it has limitations
 * But it has chance of ClassCastException
-* It throws warnings use @SafeVargs from Java 9 o supress warnings
-* meaning for private(Java 9) , static , final  or constructors (@SafeVargs works here)
+* It throws warnings use @SafeVarargs from Java 9 o supress warnings
+* meaning for private methods(Java 9) , static , final  or constructors (@SafeVarargs works here)
 
 # Generic Instances cannot be created 
 

@@ -44,7 +44,8 @@ class A implements Movable,Runnable{
 ```
 
 * Interfaces cannot have constructor , instance fields , non final static fields
-* only in java 9 they get allowing private methods which acts as helper methods and default methods are being allowed
+* only in java 8 default methods are being allowed
+* Java 9 private interface methods are allowed
 * Interfaces all the fields become public static final (constants)
 
 ```java

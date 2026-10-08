@@ -31,7 +31,7 @@ int n = 13; // 1101
 int x = n << 1;
 System.out.println(x);// prints 26
 int y = n >> 2;
-// 1101 >> 2 = 0110
+// 1101 >> 2 = 0011
 System.out.println(y);// 3
 ```
 

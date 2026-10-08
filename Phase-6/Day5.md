@@ -1,5 +1,5 @@
 # Enumerated Class 
-Enumerated Class is the class which extends Enums
+Enumerated Class is the class which extends Enum
 
 * It can have some defined number of instances
 * It can have instance fields,constants
@@ -28,9 +28,9 @@ for(TrafficLight light:signals){
 ```
 
 # Sealed Classes 
-* Sealed Classes are the type of Class in which permits only particular class can inherit this class or the class should be present in same file as source code.
+* Sealed Classes are the type of Class in which permits only particular class can inherit this class 
 * sealed class in which direct subtype should refer whether is sealed , non-sealed or final
-* non-permitted can access if they present in same file.
+* If there is no permits clause it can access classes in same file
 
 ```java
 sealed class Sample permits DirectSample{

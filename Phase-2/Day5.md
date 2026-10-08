@@ -45,7 +45,8 @@ case :
 3. string literals
 4. More than one of these seprated by commas
 
-1. Execution stops until break from case matched or default will execute
+1. Execution stops until break is backwards . Execution falls 
+through until a break.
 
 Example
 This is new Java 14 version of Switch Statements when break statements no longer required. it is not fall through

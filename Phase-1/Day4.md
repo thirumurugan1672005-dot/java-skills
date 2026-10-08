@@ -12,6 +12,8 @@
 * float ==> double 
 
 * char ==> int
+* long -> float -> double 
+* int -> float/double
 ----------------------------------
 
 ## Explicit Casting 

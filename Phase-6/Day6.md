@@ -8,9 +8,9 @@
 ## Constructors of Wrapper classes are depreceated
 ```java
 
-Integer i = new Integer(); // depereceated
+Integer i = new Integer(12); // depereceated
 ```
-It does not exist now.
+
 # valueOf method
 ```java
 Integer i = Integer.valueOf(13);

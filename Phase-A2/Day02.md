@@ -48,7 +48,7 @@ Iterator: iterator which actuall has methods to iterate it
 
 Iterable :
 iterator() : returns the iterator 
-forEach() : implements the Supplier interface and iterate over elements 
+forEach() : implements the Consumer interface and iterate over elements 
 
 Iterator:
 next() : next element if not NoSuchElementException

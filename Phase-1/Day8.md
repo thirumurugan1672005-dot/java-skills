@@ -38,7 +38,7 @@ int x = 256;
 byte b = 0;
 b+=x;
 ```
-Reason : b+= x actually becomes b = (int)(b+x);
+Reason : b+= x actually becomes b = (byte)(b+x);
 
 # Increment and Decrement Operator
 

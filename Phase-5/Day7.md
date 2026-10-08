@@ -103,5 +103,5 @@ since it is even false it executes next one . so it was avoided
 
 Protected Access was given class to use subclass and classes of same package
 
-Protected Methods was more common to use give access only to subclass
+Protected Methods was more common to use give access only to subclass and classes of same package
 
