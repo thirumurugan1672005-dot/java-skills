@@ -44,7 +44,7 @@ class Math{
 * These methods used when only explicit parameters are used
 * These methods also used when only static fields are involved.
 * These methods cannot access instance fields directly
-* In order to access static methods they need to create object reference for the same class itself.
+* In order to access instance methods we need to create objects
 
 ```java
 class Sol{
