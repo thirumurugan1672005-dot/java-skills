@@ -59,17 +59,18 @@ public class Main {
                                            |
                                    🔴 Collection (interface extends Iterable)
                                            |
-         + -----------------------------------------------------------------------------+
-                        |                                         |
-               🔴 List (interface extends Collection)     🔵 AbstractCollection (abstract class implements Collection)
-                        |                                         |
-               + ---------------------------------------------------------------------------+
-                    |      |
-                    |---- 🔵 AbstractList (abstract class extends AbstractCollection implements List)
-                    |      |
-                    |---  🔵AbstractSequentialList ( abstract class extends AbstractList implements List)
-                    |      |
-                    |---- 🟢 LinkedList (concrete class extends AbstractSequentialList implements List,Deque)
+ ----------------------------------------------------------------------------------------------------------+
+     |                                                     |                                         |
+🔴 Queue (interface extends Collection)               🔴 List (interface extends Collection)     🔵 AbstractCollection (abstract class implements Collection)
+     |                   |                                         |
+🔴 Deque (interface extends Queue)               + ---------------------------------------------------------------------------+
+     |                                                 |            |
+     |                                                 |            |
+     |                                                 |---- 🔵 AbstractList (abstract class extends AbstractCollection implements List)
+     |                                                 |             |
+     |                                                 |---  🔵AbstractSequentialList ( abstract class extends AbstractList implements List)
+     |                                                 |            |
+     | ------------------------------------------------|---- 🟢 LinkedList (concrete class extends AbstractSequentialList implements List,Deque)
                     
 
 ```
