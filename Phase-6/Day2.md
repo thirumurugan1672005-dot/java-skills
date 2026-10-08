@@ -28,4 +28,7 @@ class Employee{
 ```java
 Objects.hash(field1,field2,field3);
 ```
-Records and Arrays has own implementation of hashcode
+Records has implementation of hashcode()
+
+arr.hashcode() is identity based ; Use Arrays.hashcode(arr)
+
