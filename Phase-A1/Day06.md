@@ -112,7 +112,7 @@ make(String::new);
 ```
 ```java
 public <T> Pair<T> make(Class<T> supp) throws Exception{
-  return new Pair<>(supp.getConstructor().newInstance().supp.getConstructor().newInstance());
+  return new Pair<>(supp.getConstructor().newInstance(),supp.getConstructor().newInstance());
 }
 make(String.class);
 ```
