@@ -45,7 +45,7 @@ import java.util.Date;
 
 ```java
 
-import static java.lang.Math;
+import static java.lang.Math.*;
 
 class Sol{
   public void solve(int x){
