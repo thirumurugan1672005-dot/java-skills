@@ -1,4 +1,4 @@
-# Switch Expressions
+# Switch Expressions and Statements
 
 Switch Expressions used to yield a value from multiple alternatives
 
@@ -46,8 +46,12 @@ This is new Java 14 version of Switch Statements when break statements no longer
 ```java
 
 switch(c){
-  case "Yes"->"Yes";
-  case "No" -> "No";
+  case "Yes"->{
+     yield "Yes";
+  };
+  case "No" -> {
+     yield "No";
+  }
    default -> {
      System.out.println("Default");
       yield "Invalid";

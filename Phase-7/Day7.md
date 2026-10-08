@@ -54,6 +54,6 @@ String word = "hello";
 word = "greeting";
 Runnable runnable = () ->{
 System.out.print(word);
-}
+};
 ```
 Above code results in compile error as it using variables potentially changing 

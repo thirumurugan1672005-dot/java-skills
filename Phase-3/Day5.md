@@ -37,7 +37,7 @@ public class Employee{
     public Employee(String n,double s,int y){
          name = n;
          salary = s;
-         hireDay = new LocalDate().of(y,1,1);
+         hireDay = new LocalDate.of(y,1,1);
          year = y;       
     }
     public void raiseSalary(int per){
