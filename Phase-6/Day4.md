@@ -2,7 +2,7 @@
 
 * get() : get the elements of array list using indexes.
 * set(i,ele): set the elements at index of array list 
-* if index is greater or equal to size , the IndexBoundsOfException occurs.
+* if index is greater or equal to size , the IndexOutOfBoundsOfException occurs.
 
 ## Before Generic Class 
 * Legacy code used ArrayList with raw type which is bit dangerous
