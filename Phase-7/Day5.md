@@ -1,6 +1,6 @@
 # Functional Interface
 
-Functional Interface is the interface with only abstract methods
+Functional Interface is the interface with only one abstract methods
 
 Java chose to use functional interface for the lambda expressions
 
@@ -67,7 +67,7 @@ It calls only it is null
 
 ## Consumer
 
-Consumes a value (return)
+Consumes consumes a value and return nothing 
 
 
 ```java
@@ -90,7 +90,7 @@ public class Main {
 }
 ```
 # Predicate
-accepts none and returns boolean
+takes argument and returns boolean
 
 ```java
 
