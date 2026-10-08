@@ -40,14 +40,15 @@ return salary;
 class Manager extends Employee{
   private double bonus;
 public double getBonus(){
+return this.bonus;
 }
 }
 ```
 ```java
 Employee[] employees = new Employee[3];
 employees[0] = new Manager();
-employees[1] = new Employee():
-employees[2]=  new Employee():
+employees[1] = new Employee();
+employees[2]=  new Employee();
 ```
 * See employees[0] is the object of Manager but it temporarly forgets its type
 
@@ -83,7 +84,7 @@ Able to intialise boss variable if it is instance of Manager
 # Patterns with instance of
 ## Pattern 1 with &&
 ```java
-if(m instance of Manager boss && boss.getBonus()){
+if(m instance of Manager boss && boss.getBonus() == 1200){
 }
 ```
 Checking with && is good because left is true right is going to executed
