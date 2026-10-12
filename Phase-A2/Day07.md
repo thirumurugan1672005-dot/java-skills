@@ -145,3 +145,91 @@ public class Main {
 }
 
 ```
+
+
+```java
+package train;
+
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.HashMap;
+import java.util.IdentityHashMap;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.WeakHashMap;
+
+public class Main {
+    public static void main(String[] args) {
+        
+    	HashMap<Integer,Integer>map = new HashMap<>();
+    	IdentityHashMap<Integer,Integer>idmap = new IdentityHashMap<>();
+    	WeakHashMap<Integer,Integer>weakMap = new WeakHashMap<>();
+    	
+    	
+    	// put 
+    	map.put(1,2);
+    	map.put(12,3);
+    	map.put(3,4);
+    	
+    	idmap.put(1,2);
+    	idmap.put(2, 100);
+    	idmap.put(500, 45);
+    	
+    	
+    	weakMap.put(1,2);
+    	weakMap.put(300, 3);
+    	weakMap.put(4, 5);
+    	
+    	// get 
+    	System.out.println(map.get(1));
+    	System.out.println(idmap.get(1));
+    	System.out.println(weakMap.get(1));
+    	
+    	// getOrDefault
+    	System.out.println(map.getOrDefault(12, 0));
+    	System.out.println(idmap.getOrDefault(12, 50000));
+    	System.out.println(weakMap.getOrDefault(12, 50000));
+    	
+    	// compute
+    	map.compute(12, (k,v)->{
+    		return k*2+v;
+    	});
+    	idmap.compute(2, (k,v)->{
+    		return k*2+v;
+    	});
+    	weakMap.compute(4, (k,v)->{
+    		return k*2+v;
+    	});
+    	
+    	
+    	// computeIfAbsent
+    	map.computeIfAbsent(15,(k)->{
+    		return k * 2+32;
+    	});
+    	idmap.computeIfAbsent(15,(k)->{
+    		return k * 2+32;
+    	});
+    	weakMap.computeIfAbsent(15,(k)->{
+    		return k * 2+32;
+    	});
+    	// merge
+    	map.merge(12,1,Integer::sum); 
+    	idmap.merge(12,1,Integer::sum); 
+    	weakMap.merge(12,1,Integer::sum); 
+    	// print
+    	map.forEach((k,v)->System.out.println(k+" "+v));
+    	idmap.forEach((k,v)->System.out.println(k+" "+v));
+    	weakMap.forEach((k,v)->System.out.println(k+" "+v));
+    	// clear
+    	map.clear();
+    	idmap.clear();
+    	weakMap.clear();
+    	// size
+    	System.out.println(map.size());
+    	System.out.println(idmap.size());
+    	System.out.println(weakMap.size());
+  
+    }
+}
+
+```
