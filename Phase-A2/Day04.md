@@ -98,3 +98,73 @@ public class Main {
 }
 
 ```
+
+
+```java
+package train;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+public class Main {
+    public static void main(String[] args) {
+     
+    	ArrayList<Integer>arr = new ArrayList<>();
+    	LinkedList<Integer>linked = new LinkedList<>();
+    	
+    	
+    	// add elements in arraylist
+    	arr.add(1);
+    	arr.add(2);
+    	arr.add(3);
+    	
+    	// add elements in linkedlist
+    	linked.add(1);
+    	linked.add(2);
+    	linked.add(3);
+    	
+    	// add collection 
+    	
+    	ArrayList<Integer>a = new ArrayList<>();
+    	a.add(100);
+    	a.add(200);
+    	a.add(300);
+    	
+    	
+    	arr.addAll(a);
+    	linked.addAll(a);
+    	
+    	
+    	// remove element
+    	
+    	arr.remove(Integer.valueOf(200));
+    	linked.remove(Integer.valueOf(200));
+    	
+    	
+    	// remove condition
+    	arr.removeIf(ele -> ele >200);
+    	linked.removeIf(ele->ele < 100);
+    	
+    	// forEach to iterate
+    	arr.forEach(System.out::println);
+    	linked.forEach(System.out::println);
+    	
+    	// clear the list
+    	arr.clear();
+    	linked.clear();
+    	
+    	System.out.println(arr);
+    	System.out.println(linked);
+    	
+    	
+    	
+    	
+    	
+    	
+      
+    }
+}
+
+```
+
+
