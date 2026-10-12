@@ -1,6 +1,6 @@
-# Small Collections
+# Small Collections (unmodifiable collections)
 
-* The of() method was used in set , list , map to create  unmutable collections
+* The of() method was used in set , list , map to create  unmodifiable collections
 * They dont support mutable operations
 * osEntries() from map lets you put entry inside the map
 
@@ -41,8 +41,8 @@ public class Main {
 
 ```
 
-# copyOf 
-* copyOf method as introduced so we can get immutable collections copy from mutable one
+# copyOf (unmodifiable copies)
+* copyOf method as introduced so we can get unmodifiable copy from mutable one
 * they dont reflect each other
 
 ```java
@@ -94,6 +94,114 @@ public class Main {
     	arr.forEach(System.out::println);
     	set.forEach(System.out::println);
     	map1.forEach((k,v)->System.out.println(k+" "+v));
+    }
+}
+
+```
+# UnModifiable Views 
+* in unmodifiable views it wont accept any mutable changes
+* when collections provided gets changed views reflected unlike copies
+* mutating things will throw UnsupportedOperationException
+
+```java
+package train;
+
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.NavigableSet;
+import java.util.Set;
+import java.util.SortedSet;
+import java.util.TreeSet;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+
+public class Main {
+    public static void main(String[] args) {
+        List<Integer> arr = new ArrayList<>();
+        for(int i=1;i<=10;i++) {
+        	arr.add(i);
+        }
+    	Collection<Integer> col = Collections.unmodifiableCollection(arr);
+    	col.forEach(System.out::println);
+    	
+    	System.out.println("After changing: ");
+    	arr.remove(Integer.valueOf(2));
+    	arr.add(200);
+    	col.forEach(System.out::println);
+    	
+    	
+    	List<Integer> list = Collections.unmodifiableList(arr);
+    	list.forEach(System.out::println);
+    	
+    	Set<String>set = new HashSet<>();
+    	set.add("Hello");
+    	set.add("World");
+    	Set<String> s = Collections.unmodifiableSet(set);
+    	s.forEach(System.out::println);
+    	
+    	set.add("Master");
+    	s.forEach(System.out::println);
+    	
+    	NavigableSet<Integer> navSet = new TreeSet<>();
+    	SortedSet<Integer> sortedSet = new TreeSet<>();
+    	
+    	NavigableSet<Integer>nav = Collections.unmodifiableNavigableSet(navSet);
+    	SortedSet<Integer> sort = Collections.unmodifiableSortedSet(sortedSet);
+    	
+    	for(int x=1000;x<=5000;x+=1000) {
+    		navSet.add(x);
+    		sortedSet.add(x/10);
+    	}
+    	nav.forEach(System.out::println);
+    	sort.forEach(System.out::println);
+    	
+    }
+}
+
+```
+
+```java
+package train;
+
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.NavigableMap;
+import java.util.SortedMap;
+import java.util.TreeMap;
+
+public class Main {
+    public static void main(String[] args) {
+       HashMap<Integer,Integer>map = new HashMap<>();
+       NavigableMap<Character,Integer>navMap = new TreeMap<>();
+       SortedMap<Character,Integer> sortedMap = new TreeMap<>();
+       
+       
+       // views 
+       Map<Integer,Integer> mapview = Collections.unmodifiableMap(map);
+       NavigableMap<Character,Integer>navView = Collections.unmodifiableNavigableMap(navMap);
+       SortedMap<Character,Integer> sortView = Collections.unmodifiableSortedMap(sortedMap);
+       
+       for(int i=1;i<=10;i++) {
+    	   map.put(i, i*32+12);
+       }
+       
+       navMap.put('a', 22);
+       navMap.put('A', 23);
+       navMap.put('q', 45);
+       
+       
+       sortedMap.put('z', 34);
+       sortedMap.put('h', 45);
+       sortedMap.put('f', 43);
+       
+       mapview.forEach((k,v)->System.out.println(k+" "+v));
+       navView.forEach((k,v)->System.out.println(k+" "+v));
+       sortView.forEach((k,v)->System.out.println(k+" "+v));
+    	
     }
 }
 
