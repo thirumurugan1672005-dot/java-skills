@@ -175,3 +175,5 @@ public class Main
 ```
 * We can read it but we can never update it
 * We cannot even corrupt <?extends A> to store torhers anything to work
+* Because it collapses whether it is A or B when we try to mutate it so  we can only read from it
+* we can update only as null
