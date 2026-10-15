@@ -4,7 +4,7 @@
 
 * There are two ways to stop the error
   1. user allows to save the work and terminate
-  2. Go back to safe state
+  2. Go back to safe state and execute other commands
 
 ## Major Errors
 1. User Input Errors
@@ -15,8 +15,9 @@
 
 # Older Days of Handling Exceptions
 * In Older Days they return error code so that when we return -1 It is considereed error
-* But Way we can take -1 as valid input for some operations
-* It is not considered as good practice
+* But Way we can take -1 as valid output for some operations
+* Sometime return null reference indicates error code
+
 
 
 # Exceptions 
