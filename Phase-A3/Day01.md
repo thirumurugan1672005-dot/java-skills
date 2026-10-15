@@ -44,6 +44,7 @@
 # Error 
 * Error caused by many things like resource exhaustion
 * Only thing we can do is gracefully end this program
+* We shoulds not throw this object and it is used by jvm
 
 # RuntimeException
 
