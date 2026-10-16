@@ -66,3 +66,71 @@ public class Main {
 }
 
 ```
+
+
+# Stack Trace 
+StackTrace is the result of pending methods in program execution.
+
+printStackTrace() method to the print the methods
+
+
+* StackWlaker class returns stream of stack trace to print and show
+* It access class names not access to the objects of pending methods
+
+```java
+package simple;
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.util.Arrays;
+import java.util.Scanner;
+
+class MyResource implements AutoCloseable{
+
+	@Override
+	public void close() throws Exception {
+		
+	     System.out.println("Practically closed....");
+	     throw new RuntimeException("Running failed ...");
+		
+	}
+	
+}
+public class Main {
+	public static void main(String... args)  {
+	     try(var b = new MyResource();Scanner sc = new Scanner(System.in);)
+	     {
+	    	 int n = sc.nextInt();
+	    	 
+	     }
+	     catch(Exception e) {
+	          StackWalker walker = StackWalker.getInstance();
+	          walker.forEach(System.out::println);
+	     }
+	       
+	}
+}
+
+```
+
+```java
+package simple;
+
+class Test{
+	public int factorial(int n) {
+		var walker = StackWalker.getInstance();
+		walker.forEach(System.out::println);
+		if(n<=0) return 1;
+		return n*factorial(n-1);
+	}
+}
+public class Main {
+	public static void main(String... args)  {
+		Test obj = new Test();
+	     obj.factorial(5);
+	       
+	}
+}
+
+```
+
