@@ -1,10 +1,9 @@
 # How to Catch a exception
 
-* If the code just throws exception the program is going to terminate the execution
+* If the program does not caught exception anywhere  the program is going to terminate the execution
 * It is time to handle the exception
 
-* The method may declare throws some checked exception or it throw Runtime exception
-* If such method called , it mush handle it or throw back to next caller.
+* If the method contains line that potentially causes exception it may handle it or propogate to the next caller by placing it in header of the method throws Exception
 
 try-catch block
 ```java
@@ -31,7 +30,7 @@ public class Main {
 }
 
 ```
-* The try block is used to place the code which may throw exception
+* The try block is used to handle the code which may throw exception
 * if the exception occured , the remainder of try block is skipped and move to catch block
 * If the exception never occurs the catch block was never executed.
 
@@ -65,7 +64,8 @@ public class Main {
 
 ```
 
-The code describes In Overriddden method throws Exception cannot be declared if the super class method did not have one
+* The code describes In Overriddden method throws Exception cannot be declared if the super class method did not have one
+* So if the method called in overridden method which might throw Exception you should handle it.
 ```java
 package simple;
 
@@ -96,6 +96,8 @@ public class Main {
 }
 
 ```
+The aboce code terminates throw compiler error
+
 
 If the super class method have throws declaration then only subclass method can have either specific excpetion or none at all.
 
