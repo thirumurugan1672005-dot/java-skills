@@ -37,7 +37,7 @@ private String name;
     if(obj == null) return false;
     if(getClass() != obj.getClass()) return false;
     Employee employee = (Employee)obj;
-    return Objects.equals(this.name,employee.name) && this.id == employee.id && Double.compare(this.salary,employee.salary);
+    return Objects.equals(this.name,employee.name) && this.id == employee.id && Double.compare(this.salary,employee.salary) == 0;
   }
 }
 ```
