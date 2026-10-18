@@ -1,71 +1,85 @@
-# Local Dates and time 
+# Threads 
 
-# Timeline
+## MultiTasking
 
-* Fundamental unit of time is second
-* one day has 86400 seconds
-* In 1967 Precise defintion is made from caesium and then official atomic clocks born
+* Multiple tasks or programs executed simulataneoulsy in a machine
+* Multitasking peforms by Os gets Cpu tiny slice of time and switch rapidly between them
 
-* 1972 leap seconds was found (leap second : second might need be removed once in a while)
-* But most computers just slow down or speed up on before reaching leap second
+## Thread 
+
+Thread is the one part where the program executes
+
+## Process and Thread 
+
+* Process has unique variables
+* It is hard to interprocess
+* It gets more overhead to destroy and create process
+
+* Thread share variables
+* It is lightweight
+* It gets less overhead for creating and destroying threads
+
+# MultiThreading 
+
+Programs use more than one thread in a time 
 
 
-# Instant 
-* Instant represents the instant of class
-* it was calculated from epoch 1 jan 1970
-* Instant.min : billion years past
-* Instant.max : 1 jan 1billion
-* it is immutable
+In java You implement by Thread class 
+
+1. Create Runnable interface
+2. since it is functional interface we are going to use lambda expression(block of code)
+3. Create a runnable lambda expression
+4. new Thread(r) where r is runnable block of code
+5. start() method to start the thread
+
 
 ```java
 package simple;
 
-import java.time.Instant;
-
-public class Main {
+public class Simple {
 	
-	public static void main(String... args)  {
-		
-	     Instant instant = Instant.now();
-	     System.out.println(instant.EPOCH);
-	     System.out.println(instant);
-	     
-	     Instant ins1 = instant.plusMillis(100);
-	     System.out.println(ins1);
-	     
-	     Instant ins2 = instant.minusMillis(100);
-	     System.out.println(ins2);
-	     
-	     
-	     Instant ins3 = instant.plusNanos(10);
-	     Instant ins4 = instant.minusNanos(10);
-	     
-	     System.out.println(ins3+" "+ins4);
-	     
-	     Instant ins5 = instant.plusSeconds(10);
-	     Instant ins6 = instant.minusSeconds(10);
-	     
-	     System.out.println(ins5+" "+ins6);
-	     
-	     
+	public static void print1() {
+		for(int i=1;i<=100;i++) {
+			int x = (i*2) + (i&1) + (i<<1);
+			System.out.println(x+" "+i);
+		}
 	}
+	public static void print2() {
+		for(int i=101;i<=200;i++) {
+			int x = (i>>3) + (i & 2) + (i*5);
+			System.out.println(x+" "+i);
+		}
+	}
+	
+
+	public static void main(String[] args) {
+		
+         Runnable task1 = () -> {
+        	 try {
+				print1();
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+         };
+         
+         Runnable task2 = () -> {
+        	 try {
+				print2();
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+         };
+         
+         new Thread(task1).start();
+         new Thread(task2).start();
+	}
+
 }
 
-```
-
-# Duration
-* Amount of time between two intervals
-
-```java
- 
-	    Instant i1 = Instant.now();
-	    Instant i2 = i1.plusSeconds(10);
-	    i2 = i2.plusNanos(100);
-	    Duration d1 = Duration.between(i1, i2);
-	    
-	    System.out.println(d1.getSeconds());
-	    System.out.println(d1.getNano());
-	    System.out.print(d1);
 ```
 
 
