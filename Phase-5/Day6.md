@@ -26,3 +26,5 @@
 3. when use super keyword used Virtual machine just looks the method table of super class
 
 * Subclass method should be same or more visible as parent class method.
+
+* super.method() calls the super class method

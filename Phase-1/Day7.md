@@ -34,10 +34,10 @@ In Encoding Schemes There are two problems
 1. One letter was encoded as different letters in different encoding schemes
 2. Some of the large character sets have variable length of encoding schemes
 
-* Unicode solves this problem (16 bits)
+* Unicode solves this problem by allowing 16 bits
 * However there are more than 65,536 characters are used there which cannot fit into 16 bit
 
-* Java uses Code point
+* Java uses Code poin with UTf-16 bit encoding
 ## Code Point:
       The code Value associated with character in encoding scheme
 * There are grouped into 17 planes are there one is basic multilingual and other 16 are supplementary

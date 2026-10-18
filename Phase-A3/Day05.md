@@ -1,5 +1,5 @@
 # try with resources 
-1. try with resources as from java 7, interfae AutoCloseable which implements close() method in class 
+1. try with resources as from java 7, interfaec AutoCloseable which implements close() method in class 
 2. try with resources will work even though it caught exceptions or not
 3. try with resources as of java 9 can take effectively final variables
 
@@ -22,7 +22,7 @@ public class Main {
 }
 
 ```
-It automatically implements close() method 
+It automatically calls close() method 
 
 
 Difficulty arises when the both original try and () within block throws exception

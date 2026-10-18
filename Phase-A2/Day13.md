@@ -33,7 +33,7 @@ public class Main {
 
 ```
 # Stack 
-* Stack is legacy class which still used today
+* Stack is legacy class and now ArrayDeque is preferred
 * It works based on Principle of Last in First Out
 * Stack in which have peek , pop like operations
 
