@@ -37,7 +37,6 @@ In Encoding Schemes There are two problems
 * Unicode solves this problem ;However there are more than 65,536 characters are used there which cannot fit into 16 bit
 
 * Java uses Code poin with UTf-16 bit encoding
-* Java uses UTF-16 bit encoding
 ## Code Point:
       The code Value associated with character in encoding scheme
 * There are grouped into 17 planes are there one is basic multilingual and other 16 are supplementary

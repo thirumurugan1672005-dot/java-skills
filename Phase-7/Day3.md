@@ -38,9 +38,9 @@ Cloneable Interface used to create clones or copies of objects
 # Records and Enums
 Records and Enums can implement interface
 # Sealed Interface
-* It is only extended by an interface or implemented by class which permits or present in same source file just like sealed classes
-* sealed interface must be sealed or non-sealed 
-* interface implements class which can be sealed , non-sealed , final
-
+# Sealed Interface
+* A sealed interface can only be extended by interfaces, or implemented by classes, that it permits (or that are in the same source file when there is no permits clause)
+* A permitted subinterface must be sealed or non-sealed
+* A permitted implementing class must be final, sealed or non-sealed
  # Inheritance within interface
  Interfaces extends multiple interfaces unlike classes
