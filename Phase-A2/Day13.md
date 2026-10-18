@@ -1,7 +1,8 @@
 # Legacy Classes
 ## Enumeration
 
-Enumeration was legacy interface before Iterable interface it helps to iterate elements
+Enumeration was legacy interface in a java 1.0
+ Iterable interface it helps to iterate elements in java 1.5
 
 ```java
 package simple;

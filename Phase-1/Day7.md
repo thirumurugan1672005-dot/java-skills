@@ -1,7 +1,7 @@
 # char Data Type
 
 * It was originally Intended to store one character
-* Java uses Unicode 16 bit encoding scheme
+* Java uses UTF-16 encoding scheme
 * They are denoted by single quotes 'A'
 * "A" is String is different from 'A'
 

@@ -44,7 +44,8 @@ TreeSet
 * HashSet is the collection in whcih we dont go over ordering instead searching of elements
 * LinkedHashSet reterives order we insert
 * TreeSet stores sorted order
-* They use hash values to compute based on identity
+* They use hash values based when override them
+* IdentityHashMap is identity comparison
 * for TreeSet elements passed must be class that implements a Comparable or pass Comparator interface
 
 ```java

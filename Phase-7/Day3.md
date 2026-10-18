@@ -12,7 +12,7 @@ Because class can extend only one abstract class while it can implement as many 
 * It does not have to worry about it implemented or not
 
 # Why Default Methods ?
-<p>Long ago,Collections interface was part of Java Standard library;
+<p>Long ago,Collection interface was part of Java Standard library;
 <br/>If the class Bag implements the interface it should implement the methods
 <br/>But Later in java 8 they introduce stream() method in interface
 <br/>If it is not default Now Bag class wont compile adding non default method makes source incompatible
@@ -40,6 +40,7 @@ Records and Enums can implement interface
 # Sealed Interface
 * Interface can be sealed so as its class which implements or interface it inherits sealed,non-sealed or final
 * It is only extended by an interface or implemented by class which permits or present in same source file just like sealed classes
+* sealed interface must be sealed or non-sealed , final
 
  # Inheritance within interface
  Interfaces extends multiple interfaces unlike classes

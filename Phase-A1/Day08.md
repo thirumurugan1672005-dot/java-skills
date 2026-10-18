@@ -1,7 +1,7 @@
 # Inheritance in Generic Types
 
-* Generic Types cannot be inherited
-* Pair<Manager> never extends Pair<Employee> though the actual classes Employee and Manager are subclasses
+* Generic Classes can be extended
+* Pair<Manager> is not subtype of  Pair<Employee> though the actual classes Employee and Manager are subclasses
 
 ```java
 package train;

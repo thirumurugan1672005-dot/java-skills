@@ -1,5 +1,5 @@
 # Queue
-* Queue is the last in first out
+* Queue is the FIRST In FIRST OUT (FIFO)
 * Queue is the implemented by ArrayDeque and LinkedList implementations
 * ArrayDeque is the implementation in which are of intial capacity
 

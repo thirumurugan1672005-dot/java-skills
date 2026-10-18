@@ -23,6 +23,6 @@
 ## What Virtual machine do ? 
 1. Virtual machine precomputes the method table with method signatures for each class when class loads
 2. When method called the Virtual machine looks up table
-3. when use super() keyword used Virtual machine just looks the method table of super class
+3. when use super keyword used Virtual machine just looks the method table of super class
 
 * Subclass method should be same or more visible as parent class method.

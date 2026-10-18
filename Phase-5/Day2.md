@@ -135,4 +135,4 @@ public class Main {
       }
 }
 ```
-This code avoids runtime error and runs successfully.
+This code avoids compiler error and runs successfully.

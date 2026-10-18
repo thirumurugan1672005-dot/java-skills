@@ -1,5 +1,5 @@
 # try with resources 
-1. try with resources as from java 7 it can close the resources if the object implements AutoCloseable interface
+1. try with resources as from java 7, interfae AutoCloseable which implements close() method in class 
 2. try with resources will work even though it caught exceptions or not
 3. try with resources as of java 9 can take effectively final variables
 

@@ -25,12 +25,12 @@
 * It might check for handler mechanism which handles exception objects
 
 
-# Throwable Interface
-* Throwable interface is root of Exception heirarchy
+# Throwable class
+* Throwable class is root of Exception heirarchy
 * It can take message for error message
 
 ```
-                             Throwable (interface)
+                             Throwable (class)
                                   |
    +---------------------------------------------------------+
           |                                  |
