@@ -58,12 +58,12 @@ public class Main {
 
 ## Supplier
 
-Supplies a value (get)
+Supplies a value as output and gets no-input
 
 ```java
 Objects.requireNonNull(word,()->"unknown");
 ```
-It calls only it is null 
+It supplies the default value when it is null and throw null pointer exception 
 
 ## Consumer
 
@@ -84,7 +84,7 @@ public class Main {
     	
     	 
     	 String word = "Rf";
-    	 String ans = Objects.requireNonNull(word,()-> "unknown"); // Supplier
+    	
     	 consume(s -> System.out.println(s));
       }
 }

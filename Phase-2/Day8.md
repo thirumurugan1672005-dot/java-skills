@@ -12,6 +12,7 @@ class Solution{
        BigInteger x = BigInteger.valueOf(23);
        BigInteger y = new BigInteger("123456789012345667");
        y.multiply(BigInteger.valueOf(2));
+       System.out.println(y);
    }
 }
 ```
@@ -51,7 +52,7 @@ Array values are accessed by indexes which ranges from 0 to size - 1
 int[]arr = new int[10];
 System.out.print(arr[0]);
 ```
-At Default Numerical data types have 0 and pointing have 0.0 and objects have null , boolean have false
+At Default Numerical data types have 0 and double have 0.0 and float has 0.0f  and objects have null , boolean have false
 ```java
 String[]sArr = new String[10];
 System.out.println(sArr[2]);// prints null
