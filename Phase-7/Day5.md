@@ -63,7 +63,7 @@ Supplies a value as output and gets no-input
 ```java
 Objects.requireNonNull(word,()->"unknown");
 ```
-It supplies the default value when it is null and throw null pointer exception 
+It supplies the default value when it is null and  error message3 was used by supplier and NullPointerException will be thrown with that message
 
 ## Consumer
 

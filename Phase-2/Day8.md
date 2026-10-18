@@ -11,11 +11,13 @@ class Solution{
    public static void main(String[] args){
        BigInteger x = BigInteger.valueOf(23);
        BigInteger y = new BigInteger("123456789012345667");
-       y.multiply(BigInteger.valueOf(2));
-       System.out.println(y);
+      BigInteger z =  y.multiply(BigInteger.valueOf(2));
+       System.out.println(z);
    }
 }
 ```
+
+BigDecimal ,BigInteger classes are immutable
 
 They have methods like add , multiply,subract ,divide 
 

@@ -22,7 +22,7 @@ class A implements Comparable{
 You should use all the implementated methods is public otherwise compiler notes it is too restrictive.
 
 Documentation :
-x.equals(y) and x.compareTo(y) should be compatible but differs in BigDecimal class alone.
+x.equals(y) and x.compareTo(y) should be compatible but differs in BigDecimal class and other few specific examples
 
 
 # Why this interface used we could have use just compareTo() method?
