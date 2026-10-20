@@ -119,3 +119,40 @@ public class Simple {
 }
 
 ```
+
+ofNullable method 
+```java
+package simple;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Stream;
+
+public class Simple {
+	
+	
+	public static void main(String[] args) {
+		
+	 List<Integer>arr = new ArrayList<>();
+	 arr.add(1);
+	 Stream<List<Integer>>stream = Stream.ofNullable(arr);
+	 stream.forEach(System.out::println);
+	 
+	 System.out.println(Stream.ofNullable(null));
+	
+	 
+      
+	}
+
+}
+
+```
+If the null it returns length 0 or else 1 used by flatmap like methods 
+
+
+```java
+	
+	 Stream<Integer>stream = Stream.iterate(1, n->n.compareTo(10) < 0 , n->n+1);
+	 stream.forEach(System.out::println);
+```
+Finite Streams can be created by using predicate in middle
