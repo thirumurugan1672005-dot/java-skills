@@ -1,7 +1,7 @@
 # Synchorisation
 
-* In Real world problem when two or more threads access same data , it gets corrupted
-* Two Threads try to access same data by methods they gets corrupted
+* In Real world problem when two or more modify  same data , it gets corrupted
+* Two Threads try to modify same data by methods they gets corrupted
 * Such condition is called race condition
 ```java
 package simple;
@@ -103,14 +103,11 @@ Thread[Thread-93,5,main]
 Balance : 99887.23464679088
 Thread[Thread-32,5,main]
 ```
-So from above example the we dont know the how much it transferred 
-
-But The money in bank should be constant but it is not it differs day by day
+So from above example the we know total balance  in bank should be constant but Money gets lost from different thread  overwrite each other
 
 # Lock objects 
-
-* Lock objects are used to give locks to threads such that if one thread accessing data another thread cannot access it same unitl unlocked
-* Threads can access different data but accessing same data will be one thread at time
+* Mechanism in which one thread is locked making another thread waits
+* Threads holds same lock objects will wait but different lock objects don't wait
 
 
 ```java
@@ -154,7 +151,7 @@ public class Simple{
 class Bank{
 	
 	private double[]accounts;
-	private Lock banLock = new ReentrantLock();
+	private Lock bankLock = new ReentrantLock();
 	
 	public Bank(int naccount,double initialAmount) {
 		accounts = new double[naccount];
@@ -162,7 +159,7 @@ class Bank{
 	}
 	
 	public void transfer(int from ,int to , double amount) {
-	   banLock.lock();
+	   bankLock.lock();
 		
 		try{
 
@@ -173,7 +170,7 @@ class Bank{
 			System.out.println("Balance : "+getTotalBalance());
 		}
 		finally{
-			banLock.unlock();
+			bankLock.unlock();
 		}
 			
 		
@@ -181,11 +178,18 @@ class Bank{
 	}
 	
 	public double getTotalBalance() {
+       bankLock.lock();
+      try{
+
 		double total = 0;
 		for(double account:accounts) {
 			total += account;
 		}
 		return total;
+      }
+      finally{
+        bankLock.unlock();
+      }
 	}
 	public int size() {
 		return accounts.length;
@@ -193,9 +197,16 @@ class Bank{
 }
 
 ```
-Thus corrupted data heavily reduced 
+Thus lock clears corruption
 
 use unlock in finally block such that it work no matter whether exception occured or not 
 
 
-oont use try with resources as it did not close by close method
+dont use try with resources as it needs a new variable and close() method but lock is shared variable
+
+
+* Here ReeterantLocks should lock and unlock by calling methods lock() and unlock() respectively by implementor
+* Reterant Locks holds count it releases when it becomes zero
+* Reterant Locks helps threads to acquire already own locks without blocking itself
+* Thread A holds lock while modify the data Thread B waits unitl A unlocks
+* Thread A holds lock needs it again it can reenter again thats way lock is reeterant
