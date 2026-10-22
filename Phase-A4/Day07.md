@@ -3,7 +3,7 @@
 * When the thread cannot execute until the condition is satisifed
 * We use condition objects
 * Lock can have one or more condition objects
-* Without Locking condition objects used leads to IllegalStateException
+* Without Locking condition objects used leads to IllegalMonitorStateException
 
 
 
@@ -11,16 +11,16 @@
 * use While loop to check condtion again after thread resumes since it may be ok when it gives to signal
 
 * await() puts the thread in waiting state and lock is released
-* signalAll() signal to the all the threads in waiting state
+* signalAll() signal to the all the threads in waiting on the same condition
 
 
 * When thread cannot satisfy the condtion it becomes waiting state and releasing its lock.
-* when another thread singalAll to signal the threead becomes runnable and Schelduer scheldues it
-* Thread acquires lock and resumes after the check condition it runs after await if it satisfies
-* Thread signalOff method should be called at the place modification may help another thread
+* when another thread signalAll to signal the threead becomes runnable and Schelduer scheldues it
+* Thread reacquires lock and resumes after await() only after rechecking condition if it satisfies
+* Thread signalAll method should be called at the place modification may help another thread
 
 
-  ```java
+ ```java
   package simple;
 
 import java.util.Arrays;
@@ -77,13 +77,14 @@ class Bank{
            while(accounts[from] < amount) {
         	   
         	   sufficientFunds.await();
+           }
         	   
         	   System.out.println(Thread.currentThread());
         	   accounts[from] -= amount;
         	   System.out.println(amount+" transferred  from "+from+" to "+to);
         	   accounts[to] += amount;
         	   System.out.println("Balance : "+getTotalBalance());
-           }
+           
            
            sufficientFunds.signalAll();
 		}
