@@ -1,4 +1,3 @@
-<img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/60be18b9-98dd-49c0-8fda-6341ddc10867" /># Optional interface 
 
 Optional interface is the way to represent T is present or not instead of null
 
