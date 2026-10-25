@@ -50,4 +50,16 @@ When there are many instances of same class you have naming clashes
 
 1. use @Primary to make one as default value
 2. @Qualifier during injection so it takes correct value
-3. Name conflicts can throw exception if not handled 
+3. Name conflicts can throw exception if not handled
+
+# Interface 
+
+* Contract tells what has to be done
+* In order to decouple the implementations we use interface so one class does not depend on another class tightly
+* It also provides abstraction
+* We are going to seperate what is done and how is done
+* When implemention changes it does not affect class using it
+
+  Several sterotype annotations like @Service and @Repository also used
+
+
