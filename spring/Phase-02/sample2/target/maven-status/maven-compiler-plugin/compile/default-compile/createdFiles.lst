@@ -1,0 +1,7 @@
+com\sample1\proxies\EmailCommentNotificationPoxy.class
+com\sample1\App.class
+com\sample1\repo\DBCommentRepository.class
+com\sample1\model\Comment.class
+com\sample1\proxies\CommentNotificationProxy.class
+com\sample1\repo\CommentRepository.class
+com\sample1\service\CommentService.class
