@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlnx:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+</head>
+<body>
+    <h1>User Page </h1>
+    <h2> View Users </h2>
+    <table>
+        <thead>
+            <tr>
+            <th>USER ID </th>
+            <th>USER NAME</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="u: ${users}">
+              <td th:text="${u.userId}"><td>
+                <td th:text="${u.username}"><\td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Add Users </h2>
+    <form action="/users" method="post">
+        UserId : <input type="number" step="any" name="userId"><br/>
+        Username : <input type ="text" name="username"><br/>
+        <button type="submit">AddUser</button>
+    </form>
+</body>
+</html>
