@@ -1,0 +1,16 @@
+<!Doctype html>
+
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <title>Login Page </title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form action="/" method ="post">
+        <input type="text" name="username" placeholder="Enter Username"><br/>
+        <input type="password" name ="password" placeholder="Enter Password"><br/>
+        <button type="submit">Login</button>
+    </form>
+    <p  style={{"color":"red"}} th:text="${message}"></p>
+</body>
+</html>
