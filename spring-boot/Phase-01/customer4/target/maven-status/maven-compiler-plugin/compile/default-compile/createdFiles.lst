@@ -1,0 +1,7 @@
+com\example\customer\CustomerApplication.class
+com\example\customer\controller\CustomerController.class
+com\example\customer\GlobalExceptionAdvice.class
+com\example\customer\CustomerConfiguration.class
+com\example\customer\repository\CustomerRepository.class
+com\example\customer\model\Customer.class
+com\example\customer\repository\Repository.class

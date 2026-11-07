@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: com.example.customer.CustomerApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.035 s <<< FAILURE! -- in com.example.customer.CustomerApplicationTests
+com.example.customer.CustomerApplicationTests.shouldcreateAndRetreiveCustomer -- Time elapsed: 0.580 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<200 OK> but was:<201 CREATED>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:62)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:129)
+	at org.springframework.test.web.support.AbstractStatusAssertions.lambda$assertStatusAndReturn$0(AbstractStatusAssertions.java:247)
+	at org.springframework.test.web.servlet.client.ExchangeResult.assertWithDiagnostics(ExchangeResult.java:221)
+	at org.springframework.test.web.servlet.client.StatusAssertions.assertWithDiagnostics(StatusAssertions.java:45)
+	at org.springframework.test.web.support.AbstractStatusAssertions.assertStatusAndReturn(AbstractStatusAssertions.java:247)
+	at org.springframework.test.web.support.AbstractStatusAssertions.isOk(AbstractStatusAssertions.java:91)
+	at com.example.customer.CustomerApplicationTests.shouldcreateAndRetreiveCustomer(CustomerApplicationTests.java:37)
+
